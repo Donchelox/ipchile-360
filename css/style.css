@@ -1,0 +1,184 @@
+:root,body{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/republica-main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+.return:first-child {
+    margin: 0px;
+    background-color: #0046AD;
+}
+sidebar{
+    position: absolute;
+    z-index: 9999999;
+    overflow: visible;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 70, 173, 0.9);
+    color: white;
+}
+#sidebar-menu{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    position: relative;
+    z-index: 99998;
+}
+#sidebar-menu.close{
+    position: relative;
+    transform: translateX(-250px);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    z-index: 99999;
+}
+a{
+    color: white;
+    text-decoration:none;
+    cursor: pointer;
+}
+span{
+    float:right;
+    margin-right: 10px;
+}
+span.return-arrow{
+    float:left;
+    margin-left: 10px;
+}
+#content-sidebar{
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    display: block;
+}
+#logo{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 15vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/logo-ipchile.png');
+}
+#menu{
+    height: 85vh;
+    width: 250px;
+    overflow:hidden;
+    position: absolute;
+}
+.toggle-menu {
+position: relative;
+z-index: 99999;
+}
+#scroll-menu{
+    transform: translate(0px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+#scroll-menu.stgo-active{
+    transform: translate(-250px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+#scroll-menu.rancagua-active{
+    transform: translate(-750px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+#scroll-menu.laserena-active{
+    transform: translate(-1000px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+#scroll-menu.temuco-active{
+    transform: translate(-1250px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+#level-1{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(0px);
+}
+#menu-stgo{
+    position: absolute;
+    width: 250px;
+    transform: translateX(250px);
+}
+#menu-sanjoaquin{
+    position: absolute;
+    width: 250px;
+    transform: translateX(500px);
+}
+#menu-rancagua{
+    position: absolute;
+    width: 250px;
+    transform: translateX(750px);
+}
+#menu-laserena{
+    position: absolute;
+    width: 250px;
+    transform: translateX(1000px);
+}
+#menu-temuco{
+    position: absolute;
+    width: 250px;
+    transform: translateX(1250px);
+}
+.menu-item{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 1px 12px;
+    border-bottom: solid 1px white;
+    transition-duration: 0.3s;
+}
+.menu-item:hover{
+    
+    cursor: pointer;
+    background: #0046AD;
+}
+#open{
+    color: #0046AD;
+    position: relative;
+    left: 250px;top: 0px;
+    font-size: 32px;
+    margin: 0px;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+}
+.menu-scroll::-webkit-scrollbar {
+    display: none;
+    height: 100vh;
+}
+.item-menu-img{
+    width: 200px;
+    height: 120px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    margin:10px auto;
+    background-repeat: no-repeat;"
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 80vh;
+}
