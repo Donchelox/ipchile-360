@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPChile 360</title>
+    <script src="js/aframe-master.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+<main>
+    <div id="sidebar-menu">
+        <sidebar>
+            <div id="content-sidebar">
+                <div id="logo">
+                </div>
+                <div id="menu">
+                    <div id="scroll-menu">
+                        <div class="menu-lateral stgo" id="level-1">
+                            <a href="#"><div class="menu-item stgo" onclick="toggleSidebar()" >Sede Santiago <span><i class="fa fa-arrow-right"></i></span></div></a>
+                            <a href="#"><div class="menu-item" onclick="toggleSidebarRancagua()">Sede Rancagua <span><i class="fa fa-arrow-right"></i></span></div></a>
+                            <a href="#"><div class="menu-item" onclick="toggleSidebarLaSerena()">Sede La Serena <span><i class="fa fa-arrow-right"></i></span></div></a>
+                            <a href="#"><div class="menu-item" onclick="toggleSidebarTemuco()">Sede Temuco <span><i class="fa fa-arrow-right"></i></span></div></a>
+                        </div>
+                        <div id="menu-stgo" class="menu-scroll">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="toggleSidebar()">Volver<span class="return-arrow"><i class="fa fa-arrow-left"></i></span></div></a>
+                            <div class="scroll">
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/republica.jpg');" ></div>
+                                    Sala Santiago <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/republica.jpg');" ></div>
+                                    Sala Santiago <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/republica.jpg');" ></div>
+                                    Sala Santiago <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/republica.jpg');" ></div>
+                                    Sala Santiago <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/republica.jpg');" ></div>
+                                    Sala Santiago <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/republica.jpg');" ></div>
+                                    Sala Santiago <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/republica.jpg');" ></div>
+                                    Sala Santiago <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="menu-rancagua" class="menu-scroll">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="toggleSidebarRancagua()">Volver<span class="return-arrow"><i class="fa fa-arrow-left"></i></span></div></a>
+                            <div class="scroll">
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/rancagua.jpg');" ></div>
+                                    Sala Rancagua <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/rancagua.jpg');" ></div>
+                                    Sala Rancagua <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/rancagua.jpg');" ></div>
+                                    Sala Rancagua <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/rancagua.jpg');" ></div>
+                                    Sala Rancagua <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/rancagua.jpg');" ></div>
+                                    Sala Rancagua <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/rancagua.jpg');" ></div>
+                                    Sala Rancagua <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/rancagua.jpg');" ></div>
+                                    Sala Rancagua <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="menu-laserena" class="menu-scroll">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="toggleSidebarLaSerena()">Volver<span class="return-arrow"><i class="fa fa-arrow-left"></i></span></div></a>
+                            <div class="scroll">
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/laserena.jpg');" ></div>
+                                    Sala La serena <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/laserena.jpg');" ></div>
+                                    Sala La serena <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/laserena.jpg');" ></div>
+                                    Sala La serena <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/laserena.jpg');" ></div>
+                                    Sala La serena <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/laserena.jpg');" ></div>
+                                    Sala La serena <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/laserena.jpg');" ></div>
+                                    Sala La serena <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/laserena.jpg');" ></div>
+                                    Sala La serena <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="menu-temuco" class="menu-scroll">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="toggleSidebarTemuco()">Volver<span class="return-arrow"><i class="fa fa-arrow-left"></i></span></div></a>
+                            <div class="scroll">
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/temuco.jpg');" ></div>
+                                    Sala Temuco <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/temuco.jpg');" ></div>
+                                    Sala Temuco <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/temuco.jpg');" ></div>
+                                    Sala Temuco <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/temuco.jpg');" ></div>
+                                    Sala Temuco <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/temuco.jpg');" ></div>
+                                    Sala Temuco <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/temuco.jpg');" ></div>
+                                    Sala Temuco <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                                <a href="#"><div class="menu-item">
+                                    <div class="item-menu-img" style="background-image: url('img/temuco.jpg');" ></div>
+                                    Sala Temuco <span><i class="fa fa-arrow-right"></i></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </sidebar>
+        <div class="toggle-menu">
+            <i id="open" onclick="toggleSiderbarMenu()" class="fa fa-bars"></i>
+          
+        </div>
+    </div>
+	
+	<a-scene>
+      <a-sky src="img/sedes/rancagua/ran_educ.jpg" rotation="0 -160 0"></a-sky>
+
+      <a-text font="kelsonsans" value="TALLER DE MECANICA - SEDE RANCAGUA" width="6" position="-2.5 0.25 -1.5"
+              rotation="0 15 0"></a-text>
+    </a-scene>
+	
+	
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

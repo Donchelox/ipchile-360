@@ -7,8 +7,9 @@
 main{
     width: 100%;
     height: 100vh;
-    background-image: url('../img/republica-main.jpg');
-    background-size: cover;
+    background-image: url('../img/logo-ipchile.png');
+    background-color: #0046AD;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -46,6 +47,20 @@ a{
     text-decoration:none;
     cursor: pointer;
 }
+.icon-360:before {
+    content: url("/img/icon/icon-360.svg");
+    padding-right: 5px;
+    display: inline;
+    top: 4px;
+    position: relative;
+}
+.icon-video:before {
+    content: url("/img/icon/icon-video.svg");
+    padding-right: 5px;
+    display: inline;
+    top: 4px;
+    position: relative;
+}
 span{
     float:right;
     margin-right: 10px;
@@ -54,11 +69,25 @@ span.return-arrow{
     float:left;
     margin-left: 10px;
 }
+span.icon{
+    float: left;
+}
+.title-taller {
+    padding: 3px 0px;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p.title{
+    float: inherit;
+    margin: 5px 0px;
+}
 #content-sidebar{
     width: 100%;
     height: 100vh;
     margin: 0px auto;
     display: block;
+    border-right: solid 1px white;
 }
 #logo{
     display: block;
@@ -68,7 +97,7 @@ span.return-arrow{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../img/logo-ipchile.png');
+    background-image: url('../img/logo.svg');
 }
 #menu{
     height: 85vh;
@@ -79,6 +108,9 @@ span.return-arrow{
 .toggle-menu {
 position: relative;
 z-index: 99999;
+}
+.menu-item.stgo,.menu-item.rancagua,.menu-item.laserena,.menu-item.temuco, {
+    font-size: 16px;
 }
 #scroll-menu{
     transform: translate(0px, 0px);
@@ -141,6 +173,7 @@ z-index: 99999;
     transform: translateX(1250px);
 }
 .menu-item{
+    font-size:14px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 10px;
