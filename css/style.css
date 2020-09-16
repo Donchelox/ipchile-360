@@ -27,7 +27,7 @@ sidebar{
     overflow: visible;
     width: 250px;
     height: 100vh;
-    background: rgba(0, 70, 173, 0.9);
+    background: rgba(0, 70, 173, 0.94);
     color: white;
 }
 #sidebar-menu{
@@ -99,14 +99,14 @@ p.title{
     display: block;
     margin: auto;
     width: 200px;
-    height: 15vh;
+    height: 20vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('../img/logo.svg');
 }
 #menu{
-    height: 85vh;
+    height: 80vh;
     width: 250px;
     overflow:hidden;
     position: absolute;
@@ -173,6 +173,18 @@ z-index: 99999;
     width: 250px;
     overflow: visible;
     transform: translateX(0px);
+    height: 80vh;
+}
+.link-ipchile{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.link-ipchile:hover {
+    background: #0046AD;
+    margin: 0 auto;
 }
 #menu-stgo{
     position: absolute;
@@ -234,10 +246,13 @@ z-index: 99999;
     background-size: cover;
     background-position: center;
     margin:4px auto;
-    background-repeat: no-repeat;"
+    background-repeat: no-repeat;
 }
 
 .scroll {
     overflow-y: scroll;
-    height: 80vh;
+    height: 71vh;
+}
+i.fa.fa-angle-right, .i.fa.fa-angle-left {
+    font-size: 18px;
 }
