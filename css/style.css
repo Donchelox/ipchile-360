@@ -48,14 +48,14 @@ a{
     cursor: pointer;
 }
 .icon-360:before {
-    content: url("img/icon/icon-360.svg");
+    content: url("../img/icon/icon-360.svg");
     padding-right: 5px;
     display: inline;
     top: 4px;
     position: relative;
 }
 .icon-video:before {
-    content: url("img/icon/icon-video.svg");
+    content: url("../img/icon/icon-video.svg");
     padding-right: 5px;
     display: inline;
     top: 4px;
