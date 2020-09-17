@@ -1,0 +1,249 @@
+//out: style.css, sourceMap: false, compress: true
+
+//Tipografías
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@color-ipchile: #0046AD;
+@wh: #ffffff;
+
+// codigo css
+:root,body{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/logo.svg');
+    background-color: @color-ipchile;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+.return:first-child {
+    margin: 0px;
+    padding: 20px 0px 20px 10px;
+    background-color: @color-ipchile;
+}
+sidebar{
+    position: absolute;
+    z-index: 9999999;
+    overflow: visible;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 70, 173, 0.94);
+    color: @wh;
+}
+#sidebar-menu{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    position: relative;
+    z-index: 99998;
+}
+#sidebar-menu.close{
+    position: relative;
+    transform: translateX(-251px);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    z-index: 99999;
+}
+a{
+    color: @wh;
+    text-decoration:none;
+    cursor: pointer;
+}
+.icon-360:before {
+    content: url("../img/icon/icon-360.svg");
+    padding-right: 5px;
+    display: inline;
+    top: 4px;
+    position: relative;
+}
+.icon-video:before {
+    content: url("../img/icon/icon-video.svg");
+    padding-right: 5px;
+    display: inline;
+    top: 4px;
+    position: relative;
+}
+span{
+    float:right;
+    margin-right: 10px;
+}
+.title-taller>span.arrow-right {
+    position: relative;
+    top: 3px;
+}
+span.return-arrow{
+    float:left;
+    margin-left: 10px;
+}
+span.icon{
+    float: left;
+}
+.title-taller {
+    padding: 3px 0px;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p.title{
+    float: inherit;
+    margin: 0px;
+    padding-left:10px;
+}
+#content-sidebar{
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    display: block;
+    border-right: solid 1px @wh;
+}
+#logo{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 20vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/logo.svg');
+}
+#menu{
+    height: 80vh;
+    width: 250px;
+    overflow:hidden;
+    position: absolute;
+}
+.toggle-menu {
+position: relative;
+z-index: 99999;
+}
+.menu-item.menu-item.stgo,.menu-item.temuco,.menu-item.laserena,.menu-item.rancagua{
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+#scroll-menu{
+    transform: translate(0px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+#scroll-menu.stgo-active{
+    transform: translate(-250px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+#scroll-menu.rancagua-active{
+    transform: translate(-750px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+#scroll-menu.laserena-active{
+    transform: translate(-1000px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+#scroll-menu.temuco-active{
+    transform: translate(-1250px, 0px);
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+#level-1{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(0px);
+    height: 80vh;
+}
+.link-ipchile{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.link-ipchile:hover {
+    background: @color-ipchile;
+    margin: 0 auto;
+}
+#menu-stgo{
+    position: absolute;
+    width: 250px;
+    transform: translateX(250px);
+}
+#menu-sanjoaquin{
+    position: absolute;
+    width: 250px;
+    transform: translateX(500px);
+}
+#menu-rancagua{
+    position: absolute;
+    width: 250px;
+    transform: translateX(750px);
+}
+#menu-laserena{
+    position: absolute;
+    width: 250px;
+    transform: translateX(1000px);
+}
+#menu-temuco{
+    position: absolute;
+    width: 250px;
+    transform: translateX(1250px);
+}
+.menu-item{
+    font-size:14px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 1px 12px;
+    border-bottom: solid 1px @wh;
+    transition-duration: 0.3s;
+}
+.menu-item:hover{
+    cursor: pointer;
+    background: @color-ipchile;
+}
+#open{
+    color: @color-ipchile;
+    position: relative;
+    left: 250px;
+    top: 0px;
+    font-size: 32px;
+    margin: 0px;
+    cursor: pointer;
+    background-color: @wh;
+    padding: 10px;
+}
+.menu-scroll::-webkit-scrollbar {
+    display: none;
+    height: 100vh;
+}
+.item-menu-img{
+    width: 200px;
+    height: 120px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    margin:4px auto;
+    background-repeat: no-repeat;
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 71vh;
+}
+i.fa.fa-angle-right, .i.fa.fa-angle-left {
+    font-size: 18px;
+}
