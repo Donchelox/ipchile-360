@@ -58,19 +58,19 @@ a{
     text-decoration:none;
     cursor: pointer;
 }
-.icon-360:before {
-    content: url("../img/icon/icon-360.svg");
+.icon(){
     padding-right: 5px;
     display: inline;
     top: 4px;
     position: relative;
 }
+.icon-360:before {
+    content: url("../img/icon/icon-360.svg");
+    .icon();
+}
 .icon-video:before {
     content: url("../img/icon/icon-video.svg");
-    padding-right: 5px;
-    display: inline;
-    top: 4px;
-    position: relative;
+    .icon();
 }
 span{
     float:right;
@@ -134,31 +134,28 @@ p.title{
 #scroll-menu{
     transform: translate(0px, 0px);
     transition-duration: 0.1s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in-out;
+}
+.time-menu(){
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    position: relative;
 }
 #scroll-menu.stgo-active{
     transform: translate(-250px, 0px);
-    transition-duration: 0.1s;
-    transition-timing-function: ease;
-    position: relative;
+    .time-menu();
 }
 #scroll-menu.rancagua-active{
     transform: translate(-750px, 0px);
-    transition-duration: 0.1s;
-    transition-timing-function: ease;
-    position: relative;
+    .time-menu();
 }
 #scroll-menu.laserena-active{
     transform: translate(-1000px, 0px);
-    transition-duration: 0.1s;
-    transition-timing-function: ease;
-    position: relative;
+    .time-menu();
 }
 #scroll-menu.temuco-active{
     transform: translate(-1250px, 0px);
-    transition-duration: 0.1s;
-    transition-timing-function: ease;
-    position: relative;
+    .time-menu();
 }
 #level-1{
     position: absolute;
@@ -178,29 +175,24 @@ p.title{
     background: @color-ipchile;
     margin: 0 auto;
 }
-#menu-stgo{
+.menu(){
     position: absolute;
     width: 250px;
+}
+#menu-stgo{
+    .menu();
     transform: translateX(250px);
 }
-#menu-sanjoaquin{
-    position: absolute;
-    width: 250px;
-    transform: translateX(500px);
-}
 #menu-rancagua{
-    position: absolute;
-    width: 250px;
+    .menu();
     transform: translateX(750px);
 }
 #menu-laserena{
-    position: absolute;
-    width: 250px;
+    .menu();
     transform: translateX(1000px);
 }
 #menu-temuco{
-    position: absolute;
-    width: 250px;
+    .menu();
     transform: translateX(1250px);
 }
 .menu-item{
