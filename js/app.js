@@ -16,3 +16,7 @@ function toggleSiderbarMenu(){
 function toggleCloseSiderbar(){
     document.getElementById("close").classList.toggle('d-none');
 }
+
+function rancaguaEnfermeria(){
+    document.querySelector('a-sky').setAttribute('src', 'img/sedes/rancagua/ran_mecan_1.jpg')
+}
