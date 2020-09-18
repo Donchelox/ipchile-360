@@ -80,3 +80,23 @@ function testVideo(){
     document.getElementById("sidebar-menu").classList.toggle('close');
     document.querySelector('iframe').setAttribute('src', 'https://www.youtube.com/embed/116sMd5U7UY');
 }
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "img/sedes/rancagua/ran_educ.jpg",
+    "img/sedes/rancagua/ran_electro.jpg",
+    "img/sedes/rancagua/ran_enferm1.jpg",
+    "img/sedes/rancagua/ran_enferm2.jpg",
+    "img/sedes/rancagua/ran_gast.jpg",
+    "img/sedes/rancagua/ran_masot.jpg",
+    "img/sedes/rancagua/ran_mecan_1.jpg",
+    "img/sedes/rancagua/ran_mecan_2.jpg"
+)
