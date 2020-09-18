@@ -13,6 +13,12 @@
     font-family: @open-sans;
     user-select: none;
 }
+.active{
+    display: initial;
+}
+.d-none{
+    display: none;
+}
 main{
     width: 100%;
     height: 100vh;
@@ -22,6 +28,17 @@ main{
     background-repeat: no-repeat;
     background-position: center;
 
+}
+#video{
+    background-color: @color-ipchile;
+    height: 100vh !important;
+    z-index: 99999999;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+
+}
+iframe{
 }
 .scroll::-webkit-scrollbar {
     display: none;
