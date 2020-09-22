@@ -100,11 +100,11 @@ preload(
     "img/sedes/rancagua/ran_mecan_1.jpg",
     "img/sedes/rancagua/ran_mecan_2.jpg"
 )
-
+/*
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
     // true for mobile device
     document.getElementById("sidebar-menu").classList.toggle('close');
   }else{
     // false for not mobile device
     alert("not mobile device");
-  }
+  }*/
