@@ -23,6 +23,7 @@ function toggleCloseSiderbar(){
 var aScene = document.querySelector('a-scene');
 var aSky = document.querySelector('a-sky');
 var aText = document.querySelector('a-text');
+<<<<<<< HEAD
 var pausaVideo = function(){document.querySelector('video').setAttribute('src', '');}
 var titleVideo = document.getElementById("title-video");
 
@@ -161,6 +162,11 @@ function recorridoRepublica(){
     document.querySelector('video').play();
 }
 // Sede Rancagua 360
+=======
+var pausaVideo = function(){    document.querySelector('iframe').setAttribute('src', '');}
+
+//Rancagua 360
+>>>>>>> 12e033763621082ea7cf5a95b56641e43306dbfa
 
 function ranEducacion(){
     aScene.classList.remove("d-none");
@@ -210,12 +216,19 @@ function ranMecan2(){
     aText.setAttribute('value','Taller Mecanica 2 - Sede Rancagua');
     pausaVideo();
 }
+<<<<<<< HEAD
 function recorridoRancagua(){
     aScene.classList.add('d-none');
     document.getElementById("sidebar-menu").classList.toggle('close');
     titleVideo.innerHTML = "Recorrido Sede Rancagua";
     document.querySelector('video').setAttribute('src', 'videos/sede-rancagua.mp4');
     document.querySelector('video').play();
+=======
+function testVideo(){
+    aScene.classList.add('d-none');
+    document.getElementById("sidebar-menu").classList.toggle('close');
+    document.querySelector('iframe').setAttribute('src', 'https://www.youtube.com/embed/116sMd5U7UY');
+>>>>>>> 12e033763621082ea7cf5a95b56641e43306dbfa
 }
 
 var images = [];
@@ -237,4 +250,15 @@ preload(
     "img/sedes/rancagua/ran_mecan_1.jpg",
     "img/sedes/rancagua/ran_mecan_2.jpg"
 )
+<<<<<<< HEAD
 
+=======
+/*
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    // true for mobile device
+    document.getElementById("sidebar-menu").classList.toggle('close');
+  }else{
+    // false for not mobile device
+    alert("not mobile device");
+  }*/
+>>>>>>> 12e033763621082ea7cf5a95b56641e43306dbfa
