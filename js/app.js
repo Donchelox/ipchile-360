@@ -155,15 +155,10 @@ function repTallerOdonto1(){
     pausaVideo();
 }
 
-
-
-
-
 function recorridoRepublica(){
     aScene.classList.add('d-none');
     document.getElementById("sidebar-menu").classList.toggle('close');
-    titleVideo.innerHTML = "Recorrido Sede Republica";
-    document.querySelector('video').setAttribute('src', 'videos/sede-republica.mp4');
+    document.querySelector('video').setAttribute('src', 'https://griveran.cl/proyecto_360/videos/sede-republica.mp4');
     document.querySelector('video').play();
 }
 // Sede Rancagua 360
@@ -219,8 +214,7 @@ function ranMecan2(){
 function recorridoRancagua(){
     aScene.classList.add('d-none');
     document.getElementById("sidebar-menu").classList.toggle('close');
-    titleVideo.innerHTML = "Recorrido Sede Rancagua";
-    document.querySelector('video').setAttribute('src', 'videos/sede-rancagua.mp4');
+    document.querySelector('video').setAttribute('src', 'https://griveran.cl/proyecto_360/videos/sede-rancagua.mp4');
     document.querySelector('video').play();
 }
 
