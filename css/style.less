@@ -13,15 +13,37 @@
     font-family: @open-sans;
     user-select: none;
 }
+.active{
+    display: initial;
+}
+.d-none{
+    display: none;
+}
 main{
     width: 100%;
     height: 100vh;
-    background-image: url('../img/logo.svg');
+    /*background-image: url('../img/logo.svg');*/
     background-color: @color-ipchile;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
 
+}
+#video{
+    background-color: @color-ipchile;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+video{
+    margin: 0 auto;
+    width: 800px;
+    height: 450px;
+}
+h2#title-video {
+    text-align: center;
+    color: white;
 }
 .scroll::-webkit-scrollbar {
     display: none;
