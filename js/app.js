@@ -1,15 +1,24 @@
+//variables
+
+var scrollMenu = document.getElementById("scroll-menu");
+var aScene = document.querySelector('a-scene');
+var aSky = document.querySelector('a-sky');
+var aText = document.querySelector('a-text');
+var pausaVideo = function(){document.querySelector('video').setAttribute('src', '');}
+var titleVideo = document.getElementById("title-video");
+
 //Menu level 1
 function toggleSidebar(){
-    document.getElementById("scroll-menu").classList.toggle('stgo-active');
+    scrollMenu.classList.toggle('stgo-active');
 }
 function toggleSidebarRancagua(){
-    document.getElementById("scroll-menu").classList.toggle('rancagua-active');
+    scrollMenu.classList.toggle('rancagua-active');
 }
 function toggleSidebarLaSerena(){
-    document.getElementById("scroll-menu").classList.toggle('laserena-active');
+    scrollMenu.classList.toggle('laserena-active');
 }
 function toggleSidebarTemuco(){
-    document.getElementById("scroll-menu").classList.toggle('temuco-active');
+    scrollMenu.classList.toggle('temuco-active');
 }
 
 //Menu sidebar animation
@@ -20,11 +29,6 @@ function toggleCloseSiderbar(){
     document.getElementById("close").classList.toggle('d-none');
 }
 
-var aScene = document.querySelector('a-scene');
-var aSky = document.querySelector('a-sky');
-var aText = document.querySelector('a-text');
-var pausaVideo = function(){document.querySelector('video').setAttribute('src', '');}
-var titleVideo = document.getElementById("title-video");
 
 // Sede Santiago 360
 
