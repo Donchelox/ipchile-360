@@ -222,6 +222,7 @@ function recorridoRancagua(){
     document.querySelector('video').play();
 }
 
+//Precarga de archivos
 var images = [];
 function preload() {
     for (var i = 0; i < arguments.length; i++) {
@@ -232,6 +233,31 @@ function preload() {
 
 //-- usage --//
 preload(
+    //Santiago
+    "img/sedes/republica/clinica-odontologica-1.jpg",
+    "img/sedes/republica/clinica-odontologica-2.jpg",
+    "img/sedes/republica/estudio-grabacion-sonido.jpg",
+    "img/sedes/republica/estudio-postproduccion-sonido.jpg",
+    "img/sedes/republica/gimnasio-terapeutico.jpg",
+    "img/sedes/republica/laboratorio-consulta-nutricional.jpg",
+    "img/sedes/republica/laboratorio-grafica-computacional.jpg",
+    "img/sedes/republica/laboratorio-postproduccion-audiovisual.jpg",
+    "img/sedes/republica/laboratorio-voz.jpg",
+    "img/sedes/republica/sala-audiometria.jpg",
+    "img/sedes/republica/sala-vestibular.jpg",
+    "img/sedes/republica/taller-de-dibujo-diseno.jpg",
+    "img/sedes/republica/taller-de-prototipo-diseno-2.jpg",
+    "img/sedes/republica/taller-de-prototipo-diseno.jpg",
+    "img/sedes/republica/taller-electricidad.jpg",
+    "img/sedes/republica/taller-habilidades-clinicas-2.jpg",
+    "img/sedes/republica/taller-habilidades-clinicas.jpg",
+    "img/sedes/republica/taller-kinesiologia.jpg",
+    "img/sedes/republica/taller-masoterapia.jpg",
+    "img/sedes/republica/taller-odontologia-2.jpg",
+    "img/sedes/republica/taller-odontologia.jpg",
+
+    
+    //Rancagua
     "img/sedes/rancagua/ran_educ.jpg",
     "img/sedes/rancagua/ran_electro.jpg",
     "img/sedes/rancagua/ran_enferm1.jpg",
@@ -239,5 +265,6 @@ preload(
     "img/sedes/rancagua/ran_gast.jpg",
     "img/sedes/rancagua/ran_masot.jpg",
     "img/sedes/rancagua/ran_mecan_1.jpg",
-    "img/sedes/rancagua/ran_mecan_2.jpg"
+    "img/sedes/rancagua/ran_mecan_2.jpg",
+    "https://griveran.cl/proyecto_360/videos/sede-rancagua.mp4"
 )
