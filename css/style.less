@@ -13,6 +13,16 @@
     font-family: @open-sans;
     user-select: none;
 }
+li{
+    list-style: none;
+    a{
+        color:white;
+    }
+    :hover{
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
 .active{
     display: initial;
 }
@@ -244,11 +254,10 @@ p.title{
     margin: 1px 12px;
     border-bottom: solid 1px @wh;
     transition-duration: 0.3s;
-}
-.menu-item:hover{
-    cursor: pointer;
-    background: @color-ipchile;
-}
+    :hover{
+        cursor: pointer;
+        background: red;
+    }
 #open{
     color: @color-ipchile;
     position: relative;
