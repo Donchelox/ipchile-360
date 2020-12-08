@@ -13,6 +13,10 @@ var startSedes = function(){
 
 
 //Menu Maps
+function mapSedes(){
+    aScene.style.display = "none";
+    document.getElementById("sidebar-menu").style.display = "none";
+}
 
 function startRepublica(){
     startSedes();
