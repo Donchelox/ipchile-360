@@ -17,12 +17,11 @@
 main{
     width: 100%;
     height: 100vh;
-    /*background-image: url('../img/logo.svg');
-    background-color: @color-ipchile;*/
-    background-image: url(../img/background-image.jpg);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
+    color: @wh;
 
 }
 //Header
@@ -49,9 +48,8 @@ sidebar{
     transition-timing-function: ease;
     position: relative;
     z-index: 99998;
-    /*display: none;*/
-}
-#sidebar-menu.close{
+    /*display: none;*/}
+    .close{
     position: relative;
     transform: translateX(-251px);
     transition-duration: 0.5s;
@@ -262,4 +260,94 @@ p.title{
 i.fa.fa-angle-right, .i.fa.fa-angle-left {
     font-size: 18px;
     margin-right: 5px;
+}
+
+//Home
+#logo-home{
+    text-align: center;
+    height: 250px;
+    margin: 0px auto;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+}
+#home-recorrido{
+    height: 100vh;
+    width: 100%;
+}
+.escuelas-grid{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 180px 180px 180px;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.item-escuela{
+    background-color: @color-ipchile;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+    
+}
+.item-escuela:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+    transform: translate(0px,-10px);
+    
+}
+.item-escuela>.content{
+    height: calc(100% - 60px);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 103, 182, 0.8);
+    padding: 30px;   
+}
+.item-escuela>.content:hover{   
+    background-color:rgba(225, 0, 117, 0.8);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.item-escuela.administracion{
+    background-image: url('https://www.ipchile.cl/wp-content/uploads/2018/11/laserena-1.jpg');
+    background-size: cover;
+}
+.item-escuela.humanidades{
+    background-image: url('https://www.ipchile.cl/wp-content/uploads/2018/11/laserena-1.jpg');
+    background-size: cover;
+}
+.item-escuela.procesos{
+    background-image: url('https://www.ipchile.cl/wp-content/uploads/2018/11/laserena-1.jpg');
+    background-size: cover;
+}
+.item-escuela.ingenieria{
+    background-image: url('https://www.ipchile.cl/wp-content/uploads/2018/11/laserena-1.jpg');
+    background-size: cover;
+}
+.item-escuela.salud{
+    background-image: url('https://www.ipchile.cl/wp-content/uploads/2018/11/laserena-1.jpg');
+    background-size: cover;
+}
+.item-escuela.espacios{
+    background-image: url('https://www.ipchile.cl/wp-content/uploads/2018/11/laserena-1.jpg');
+    background-size: cover;
+}
+
+
+@media (max-width: 500px) {
+    main{
+        background-size: cover;
+        height: auto;
+    }
+    #home-recorrido{
+        height: auto;
+    }
+    .escuelas-grid{
+        grid-template-columns: 80%;
+        grid-rows: repeat(250px)
+    }
 }
