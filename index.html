@@ -17,37 +17,37 @@
 <body>
 
 <main>
-    <section id="home-recorrido">
+    <section id="home-recorrido" style="display: none;">
         <div id="logo-home">
             <img src="img/logo.svg" alt="" width="250px">
         </div>
         <div class="escuelas-grid">
-            <div class="item-escuela administracion">
+            <div class="item-escuela administracion" onclick="sectionAdministracion()">
                 <div class="content">
                     Escuela de administración y negocios
                 </div>
             </div>
-            <div class="item-escuela humanidades">
+            <div class="item-escuela humanidades" onclick="sectionHumanidades()">
                 <div class="content">
                     Escuela de humanidades
                 </div>
             </div>
-            <div class="item-escuela ingenieria">
-                <div class="content">
-                    Escuela de ingeniería
-                </div>
-            </div>
-            <div class="item-escuela procesos">
+            <div class="item-escuela procesos" onclick="sectionProcesos()">
                 <div class="content">
                     Escuela de procesos industriales y recursos naturales
                 </div>
             </div>
-            <div class="item-escuela salud">
+            <div class="item-escuela ingenieria" onclick="sectionIngenieria()">
+                <div class="content">
+                    Escuela de ingeniería
+                </div>
+            </div>
+            <div class="item-escuela salud" onclick="sectionSalud()">
                 <div class="content">
                     Escuela de salud
                 </div>
             </div>
-            <div class="item-escuela espacios">
+            <div class="item-escuela espacios" onclick="sectionEspacios()">
                 <div class="content">
                     Espacios comunes
                 </div>
@@ -55,257 +55,135 @@
         </div>
     </section>
 
-    <nav id="sidebar-menu" >
+    <nav id="sidebar-menu">
         <sidebar>
             <div id="content-sidebar">
-                <div  onclick="mapSedes()" id="logo">
+                <div onclick="returnHome()" id="logo">
                 </div>
                 <!--Menú-->
                 <div id="menu">
                     <div id="scroll-menu">
-                        <!--Menu Sedes-->
-                        <div class="menu-lateral stgo" id="level-1">
+                        <!--Menu Escuelas-->
+                        <div class="menu-lateral escuelas" id="level-1">
 
-                            <div onclick="escuelaAdministracion" class="menu-item e-administracion">
+                            <div onclick="escuelaAdministracion()" class="menu-item e-administracion">
                                 <h3>Escuela de administración y negocios</h3><i class="fa fa-angle-right"></i>
                             </div>
-                            <div onclick="escuelaHumanidades" class="menu-item e-humanidades">
+                            <div onclick="escuelaHumanidades()" onclick="escuelaHumanidades" class="menu-item e-humanidades">
                                 <h3>Escuela de humanidades</h3><i class="fa fa-angle-right"></i>
                             </div>
-                            <div onclick="escuelaProcIndustriales" class="menu-item e-procesos-industriales">
+                            <div onclick="escuelaProcesos()" onclick="escuelaProcIndustriales" class="menu-item e-procesos-industriales">
                                 <h3>Escuela de procesos industriales</h3><i class="fa fa-angle-right"></i>
                             </div>
                             
-                            <div onclick="escuelaIngenieria" class="menu-item e-ingenieria">
+                            <div onclick="escuelaIngenieria()" class="menu-item e-ingenieria">
                                 <h3>Escuela de Ingeniería</h3><i class="fa fa-angle-right"></i>
                             </div>
 
-                            <div onclick="escuelaProcIndustriales" class="menu-item e-procesos-industriales">
-                                <h3>Escuela de procesos industriales</h3><i class="fa fa-angle-right"></i>
+                            <div onclick="escuelaSalud()" class="menu-item e-salud">
+                                <h3>Escuela de salud</h3><i class="fa fa-angle-right"></i>
                             </div>
 
-                            <div onclick="escuelaProcIndustriales" class="menu-item e-procesos-industriales">
-                                <h3>Escuela de procesos industriales</h3><i class="fa fa-angle-right"></i>
+                            <div onclick="escuelaEspacios()" class="menu-item e-espacios-comunes">
+                                <h3>Espacios comunes</h3><i class="fa fa-angle-right"></i>
                             </div>
 
                             <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
                                 <div class="link-ipchile"><p>IPCHILE.cl</p></div>
                             </a>
                         </div>
-                        <!--FIN Menu Sedes-->
-                        <!--Menu Santiago-->
-                        <div id="menu-stgo" class="menu-scroll">
-                            <a href="#" class="link-top"><div class="menu-item return" onclick="toggleSidebar()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
-                            <div class="scroll">
-                                <a href="#" onclick="repOdonto1()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Clínica Odontológica 1</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repOdonto2()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Clínica Odontológica 2<p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repestudioGrabacionSonido()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Estudio Grabación Sonido</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repestudioPostSonido()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Estudio Post Producción Sonido</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repgimTerapeutico()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Gimnasio Terapeutico</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="replabConsultaNutricional()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Laboratorio Consulta Nutricional</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="replabGraficaComputacional()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Laboratorio Gráfica Computacional</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="replabPostAudiovisual()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Laboratorio Postproducción Audiovisual</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repLabVoz()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Laboratorio Voz</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repSalaAudiometria()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Sala Audiometría</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repSalaVestibular()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Sala Vestibular</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repTallerDibujoDiseno()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller de Dibujo Diseño</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repTallerPrototipoDiseno1()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller de Prototipo Diseño 1</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repTallerPrototipoDiseno2()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller de Prototipo Diseño 2</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repTallerElectro()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Electricidad</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repHabilidadesClinicas1()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Habilidades Clinicas 1</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repHabilidadesClinicas2()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Habilidades Clinicas 2</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repKine()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Kinesiología</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repMaso()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Masoterapia</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="repTallerOdonto1()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Odontología 1</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="recorridoRepublica()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/republica.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Recorrido Sede Republica</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                
+                        <!--FIN Menu Escuelas-->
+                        <!--Menu Carreras administracion-->
+                        <div class="menu-lateral" id="carreras-adminitracion">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaAdministracion()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Gastronomía</h3><i class="fa fa-angle-right"></i>
                             </div>
-                        </div>
-                        <!--FIN Menu Santiago-->
-                        <!--Menu Rancagua-->
-                        <div id="menu-rancagua" class="menu-scroll">
-                            <a href="#" class="link-top"><div class="menu-item return" onclick="toggleSidebarRancagua()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
-                            <div class="scroll">
-                                <a href="#" onclick="ranEducacion()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Educación</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="ranElectro()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Electronica</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="ranEnfermeria1()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Enfermería 1</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="ranEnfermeria2()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Enfermería 2</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="ranGastro()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Gastronomía</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="ranMasot()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Masoterapia</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="ranMecan1()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Mecanica 1</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="ranMecan2()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Taller Mecanica 2</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#" onclick="recorridoRancagua()"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/rancagua.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Recorrido Sede Rancagua</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
+                            <div onclick="escuelaHumanidades()" class="menu-item carreras-link">
+                                <h3>Taller de aplicaciones prácticas 2D y 3D</h3><i class="fa fa-angle-right"></i>
                             </div>
-                        </div>
-                        <!--FIN Rancagua-->
-                        <!--Menu La serena-->
-                        <div id="menu-laserena" class="menu-scroll">
-                            <a href="#" class="link-top"><div class="menu-item return" onclick="toggleSidebarLaSerena()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
-                            <div class="scroll">
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/laserena.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala La Serena</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/laserena.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Sala La Serena</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/laserena.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala La Serena</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/laserena.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala La Serena</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/laserena.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala La Serena</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/laserena.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala La Serena</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/laserena.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala La Serena</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/laserena.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala La Serena</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
+                            <div onclick="escuelaProcIndustriales()" class="menu-item carreras-link">
+                                <h3>Taller de prototipo</h3><i class="fa fa-angle-right"></i>
                             </div>
+
+                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
+                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
+                            </a>
                         </div>
-                        <!--FIN Menu La serena-->
-                        <!--Menu Temuco-->
-                        <div id="menu-temuco" class="menu-scroll">
-                            <a href="#" class="link-top"><div class="menu-item return" onclick="toggleSidebarTemuco()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
-                            <div class="scroll">
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/temuco.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala Temuco</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/temuco.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-360">Sala Temuco</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/temuco.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala Temuco</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/temuco.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala Temuco</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/temuco.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala Temuco</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/temuco.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala Temuco</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/temuco.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala Temuco</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
-                                <a href="#"><div class="menu-item">
-                                    <div class="item-menu-img" style="background-image: url('img/thumbnails/temuco.jpg');" ></div>
-                                    <div class="title-taller "><p class="title icon-video">Sala Temuco</p> <span class="arrow-right"><i class="fa fa-angle-right"></i></span></div></div>
-                                </a>
+                        <!--FIN Carreras Administracion-->
+                        <!--Menu Carreras Humanidades-->
+                        <div class="menu-lateral" id="carreras-humanidades">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaHumanidades()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Sala didáctica</h3><i class="fa fa-angle-right"></i>
                             </div>
+                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
+                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
+                            </a>
                         </div>
-                        <!--FIN Menu Temuco-->
+                        <!--FIN Carreras Humanidades-->
+                        <!--Menu Carreras Procesos-->
+                        <div class="menu-lateral" id="carreras-procesos">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaProcesos()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de higiene</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="escuelaHumanidades()" class="menu-item carreras-link">
+                                <h3>Laboratorio de química</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="escuelaProcIndustriales()" class="menu-item carreras-link">
+                                <h3>Taller de instalaciones y terminaciones</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Taller de obra gruesa</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="escuelaHumanidades()" class="menu-item carreras-link">
+                                <h3>Taller de metalurgia</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="escuelaProcIndustriales()" class="menu-item carreras-link">
+                                <h3>Taller de minería</h3><i class="fa fa-angle-right"></i>
+                            </div>
+
+                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
+                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
+                            </a>
+                        </div>
+                        <!--FIN Carreras Procesos-->
+                        <!--Menu Carreras ingenieria-->
+                        <div class="menu-lateral" id="carreras-ingenieria">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Ingenieria</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
+                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
+                            </a>
+                        </div>
+                        <!--FIN Carreras ingenieria-->
+                        <!--Menu Carreras salud-->
+                        <div class="menu-lateral" id="carreras-salud">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaSalud()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Salud</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
+                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
+                            </a>
+                        </div>
+                        <!--FIN Carreras salud-->
+                        <!--Menu Carreras espacios-->
+                        <div class="menu-lateral" id="carreras-espacios">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaEspacios()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Espacios</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
+                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
+                            </a>
+                        </div>
+                        <!--FIN Carreras espacios-->
+                        <!--FIN Menu Escuelas-->
+                      
                         
 
                     </div>
@@ -320,8 +198,6 @@
         </div>
         <!--FIN Menu Boton abri y cerrar menu-->
     </nav>
-
-
 </main>
     <script src="js/app.js"></script>
 </body>

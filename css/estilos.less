@@ -31,7 +31,7 @@ main{
 }
 .return:first-child {
     margin: 0px;
-    padding: 20px 0px 20px 10px;
+    padding: 15px 5px 15px 10px;
     background-color: @color-ipchile;
 }
 sidebar{
@@ -138,7 +138,7 @@ p.title{
     text-align: left;
 }
 
-.menu-item.menu-item.e-humanidades,.menu-item.e-procesos-industriales,.menu-item.e-ingenieria,.menu-item.rancagua,.menu-item.e-administracion{
+.menu-item.menu-item.e-humanidades,.menu-item.e-procesos-industriales,.menu-item.e-ingenieria,.menu-item.e-salud,.menu-item.e-administracion,.menu-item.e-espacios-comunes,.menu-item.carreras-link{
     font-size: 14px;
     padding-top: 15px;
     padding-left: 10px;
@@ -157,20 +157,28 @@ p.title{
     transition-timing-function: ease-in-out;
     position: relative;
 }
-#scroll-menu.stgo-active{
+#scroll-menu.administracion-active{
     transform: translate(-250px, 0px);
     .time-menu();
 }
-#scroll-menu.rancagua-active{
+#scroll-menu.humanidades-active{
+    transform: translate(-500px, 0px);
+    .time-menu();
+}
+#scroll-menu.procesos-active{
     transform: translate(-750px, 0px);
     .time-menu();
 }
-#scroll-menu.laserena-active{
+#scroll-menu.ingenieria-active{
     transform: translate(-1000px, 0px);
     .time-menu();
 }
-#scroll-menu.temuco-active{
+#scroll-menu.salud-active{
     transform: translate(-1250px, 0px);
+    .time-menu();
+}
+#scroll-menu.espacios-comunes-active{
+    transform: translate(-1500px, 0px);
     .time-menu();
 }
 #level-1{
@@ -178,6 +186,48 @@ p.title{
     width: 250px;
     overflow: visible;
     transform: translateX(0px);
+    height: 80vh;
+}
+#carreras-adminitracion{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(250px);
+    height: 80vh;
+}
+#carreras-humanidades{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(500px);
+    height: 80vh;
+}
+#carreras-procesos{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(750px);
+    height: 80vh;
+}
+#carreras-ingenieria{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(1000px);
+    height: 80vh;
+}
+#carreras-salud{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(1250px);
+    height: 80vh;
+}
+#carreras-espacios{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(1500px);
     height: 80vh;
 }
 .link-ipchile{
@@ -278,7 +328,7 @@ i.fa.fa-angle-right, .i.fa.fa-angle-left {
 .escuelas-grid{
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 180px 180px 180px;
+    grid-template-rows: 180px 180px;
     grid-gap: 20px;
     justify-content: center;
     align-content: center;
@@ -337,7 +387,11 @@ i.fa.fa-angle-right, .i.fa.fa-angle-left {
     background-size: cover;
 }
 
-
+@media (min-width: 1440px) {
+    #logo-home{
+        height: 320px;
+    }
+}
 @media (max-width: 500px) {
     main{
         background-size: cover;
@@ -348,6 +402,7 @@ i.fa.fa-angle-right, .i.fa.fa-angle-left {
     }
     .escuelas-grid{
         grid-template-columns: 80%;
-        grid-rows: repeat(250px)
+        grid-template-rows: repeat(6, 200px);
+        padding: 0px 0px 50px 0px;
     }
 }
