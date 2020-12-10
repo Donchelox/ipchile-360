@@ -19,6 +19,10 @@ function toggleCloseSiderbar(){
     document.getElementById("close").classList.toggle('d-none');
 }
 
+function closeDesc(){
+    document.getElementById("desc360").style.display = "none";
+}
+
 //return home
 var returnHome = function(){
     document.getElementById("sidebar-menu").style.display = "none";
@@ -33,6 +37,7 @@ var sectionAdministracion = function(){
     scrollMenu.classList.toggle('administracion-active');
     aScene.style.display = "block";
     aSky.setAttribute('src', 'img/360/clinica-odontologica-1.jpg');
+    document.getElementById("desc360").style.display = "block";
 }
 var sectionHumanidades = function(){
     document.getElementById("sidebar-menu").style.display = "block";

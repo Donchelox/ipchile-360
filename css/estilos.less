@@ -11,7 +11,7 @@
     padding:0px;
     margin: 0px;
     font-family: @open-sans;
-    user-select: none;
+    /*user-select: none;*/
     background-color: @color-ipchile;
 }
 //Main
@@ -25,8 +25,37 @@ main{
     color: @wh;
 
 }
+//Dropdown
+.dropdown {
+    position: relative;
+    /*display: inline-block;*/
+}  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 70px;
+    left: 0px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+.sub-a {
+    padding: 15px;
+    text-align: left;
+    color: black;
+}
+.sub-a:first-child{
+    border-bottom: solid 1px rgb(172, 172, 172);
+    }
+.sub-a:hover{
+    background-color: #0079bf;
+    color: white;
+}
 //Header
-
 .scroll::-webkit-scrollbar {
     display: none;
 }
@@ -68,12 +97,15 @@ a{
     top: 4px;
     position: relative;
 }
+.icon-360:hover:before{
+    fill:red;
+}
 .icon-360:before {
     content: url("../img/icon/icon-360.svg");
     .icon();
 }
-.icon-video:before {
-    content: url("../img/icon/icon-video.svg");
+.icon-gallery:before {
+    content: url("../img/icon/icon-gallery.svg");
     .icon();
 }
 span{
@@ -85,6 +117,7 @@ span{
     position: relative;
     top: 3px;
 }
+
 span.return-arrow{
     float:left;
     margin-left: 10px;
@@ -279,7 +312,7 @@ p.title{
     }
 }
 div>.menu-item:hover{
-    background-color: rgba(225, 0, 117, 0.8);
+    background-color: rgba(225, 0, 117, 1);
     cursor: pointer;
 }
 #open{
@@ -312,6 +345,10 @@ div>.menu-item:hover{
     height: 71vh;
 }
 i.fa.fa-angle-right, .i.fa.fa-angle-left {
+    font-size: 18px;
+    margin-right: 5px;
+}
+i.fa.fa-angle-down, {
     font-size: 18px;
     margin-right: 5px;
 }
@@ -391,6 +428,31 @@ i.fa.fa-angle-right, .i.fa.fa-angle-left {
     background-size: cover;
 }
 
+#desc360{
+    display: none;
+    position: absolute;
+    z-index: 9999999;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+    padding: 10px 20px;
+    bottom: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    user-select: none;
+}
+#desc360 > i.fa.fa-close{
+    float: right;
+    color: @color-ipchile;
+    cursor: pointer;
+}
+#desc360>h4{
+    margin: 10px 0px 0px 0px;
+}
 @media (min-width: 1440px) {
     #logo-home{
         height: 320px;
@@ -405,8 +467,11 @@ i.fa.fa-angle-right, .i.fa.fa-angle-left {
         height: auto;
     }
     .escuelas-grid{
-        grid-template-columns: 80%;
-        grid-template-rows: repeat(6, 200px);
-        padding: 0px 0px 50px 0px;
+        grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(6, 120px);
+    padding: 0px 10px 50px 10px;
+    }
+    .item-escuela>.content{
+        font-size:12px;
     }
 }

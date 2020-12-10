@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-icon-gallery">
+      <rect width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="icon-gallery" clip-path="url(#clip-icon-gallery)">
+    <g id="Icon_ionic-md-photos" data-name="Icon ionic-md-photos" transform="translate(-0.385 -0.384)">
+      <path id="Trazado_1" data-name="Trazado 1" d="M15.234,18.3V9.314A1.442,1.442,0,0,0,13.8,7.875H4.814A1.442,1.442,0,0,0,3.375,9.314V18.3a1.442,1.442,0,0,0,1.439,1.439H13.8A1.447,1.447,0,0,0,15.234,18.3ZM7.057,14.344,8.584,16.5l2.247-3.234L13.8,17.578H4.814Z" transform="translate(0 -2.344)" fill="#fff"/>
+      <path id="Trazado_2" data-name="Trazado 2" d="M18.3,3.375H9.314A1.442,1.442,0,0,0,7.875,4.814v.179h8.8a1.442,1.442,0,0,1,1.439,1.439v8.8H18.3A1.442,1.442,0,0,0,19.734,13.8V4.814A1.442,1.442,0,0,0,18.3,3.375Z" transform="translate(-2.344)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
