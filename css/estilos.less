@@ -12,6 +12,7 @@
     margin: 0px;
     font-family: @open-sans;
     user-select: none;
+    background-color: @color-ipchile;
 }
 //Main
 main{
@@ -277,7 +278,10 @@ p.title{
         cursor: pointer;
     }
 }
-
+div>.menu-item:hover{
+    background-color: rgba(225, 0, 117, 0.8);
+    cursor: pointer;
+}
 #open{
     color: @color-ipchile;
     position: relative;
@@ -394,7 +398,7 @@ i.fa.fa-angle-right, .i.fa.fa-angle-left {
 }
 @media (max-width: 500px) {
     main{
-        background-size: cover;
+        background-image: transparent;
         height: auto;
     }
     #home-recorrido{
