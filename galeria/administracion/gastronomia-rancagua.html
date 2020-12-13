@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >
+    <link rel="icon" type="image/png" href="../../img/favicon.ico">
+    <script src="../../js/aframe-master.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css" >
+    <link rel="stylesheet" href="../../css/gallery.css" >
+    <link rel="icon" href="../..//img/favicon.ico">
+    <title>Recorrido Virtual IPCHILE</title>
+
+</head>
+<body>
+
+<main>
+
+    <!-- Menu-->
+    <nav id="sidebar-menu" class="cerrar">
+        <div class="toggle-menu">
+            <i id="open" onclick="returnGallery()" class="fa fa-arrow-left"></i>
+        </div>
+        <!--FIN Menu Boton abri y cerrar menu-->
+    </nav>
+    <!-- Fin Menu-->
+
+    <div id="gallery">
+    <h2 style="text-align:center">Gastronomía Sede Rancagua</h2>
+
+    <div class="row">
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran08.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran09.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran15.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran16.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran17.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+      </div>
+    </div>
+  </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran01.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran02.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran03.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran04.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran05.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran06.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran07.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">8 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran08.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">9 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran09.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">10 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran10.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">11 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran11.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">12 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran12.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">13 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran13.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">14 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran14.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">15 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran15.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">16 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran16.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">17 / 17</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/rancagua/galeria/gastronomia-ran17.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </div>
+    </div>
+
+</main>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/gallery.js"></script>
+</body>
+</html>

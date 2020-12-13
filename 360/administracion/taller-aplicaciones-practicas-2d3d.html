@@ -6,58 +6,19 @@
     <meta name='viewport' 
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
      user-scalable=0' >
-    <link rel="icon" type="image/png" href="img/favicon.ico">
-    <script src="js/aframe-master.js"></script>
+    <link rel="icon" type="image/png" href="../../img/favicon.ico">
+    <script src="../../js/aframe-master.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="icon" href="img/favicon.ico">
-    <script src="js/aframe-master.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" >
+    <link rel="icon" href="../../img/favicon.ico">
     <title>Recorrido Virtual IPCHILE</title>
 
 </head>
 <body>
-
 <main>
-    <section id="home-recorrido" style="z-index: 99999999999;overflow: scroll;">
-        <div id="logo-home">
-            <img src="img/logo.svg" alt="" width="250px">
-        </div>
-        <div class="escuelas-grid">
-            <div class="item-escuela administracion" onclick="sectionAdministracion()">
-                <div class="content">
-                    Escuela de Administración y negocios
-                </div>
-            </div>
-            <div class="item-escuela humanidades" onclick="sectionHumanidades()">
-                <div class="content">
-                    Escuela de Humanidades
-                </div>
-            </div>
-            <div class="item-escuela procesos" onclick="sectionProcesos()">
-                <div class="content">
-                    Escuela de Procesos industriales y recursos naturales
-                </div>
-            </div>
-            <div class="item-escuela ingenieria" onclick="sectionIngenieria()">
-                <div class="content">
-                    Escuela de Ingeniería
-                </div>
-            </div>
-            <div class="item-escuela salud" onclick="sectionSalud()">
-                <div class="content">
-                    Escuela de Salud
-                </div>
-            </div>
-            <div class="item-escuela espacios" onclick="sectionEspacios()">
-                <div class="content">
-                    Espacios Comunes y biblioteca
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Menu-->
-    <nav id="sidebar-menu" style="display: none;">
+    <nav id="sidebar-menu">
         <sidebar>
             <div id="content-sidebar">
                 <div onclick="returnHome()" id="logo">
@@ -559,13 +520,13 @@
 
     <!--Imagen 360-->
     <section class="recorrido-360">
-        <a-scene style="display:none;">
-            <a-sky src="" rotation="0 -160 0"></a-sky>
+        <a-scene>
+            <a-sky src="../../img/escuelas/administracion/taller-aplicaciones-diseno-2dy3d/republica/360/diseno-republica01.jpg" rotation="0 -160 0"></a-sky>
         </a-scene>
     </section>
      <!--- FIN Imagen 360-->
      
 </main>
-    <script src="js/app.js"></script>
+    <script src="../../js/app.js"></script>
 </body>
 </html>

@@ -18,7 +18,10 @@ function toggleSiderbarMenu(){
 function toggleCloseSiderbar(){
     document.getElementById("cerrar").classList.toggle('d-none');
 }
-
+function returnGallery(){
+    window.history.back();
+    sectionAdministracion();
+}
 function closeDesc(){
     document.getElementById("desc360").style.display = "none";
 }
@@ -189,5 +192,8 @@ function tallerDiseno3Dy2D(){
 }
 //Gastronomia
 function gastroRepublica(){
-    window.location.href = '../galeria/administracion/gastronomia-republica.html';
+    window.location.href = '../../galeria/administracion/gastronomia-republica.html';
+}
+function gastroRancagua(){
+    window.location.href = '../../galeria/administracion/gastronomia-rancagua.html';
 }
