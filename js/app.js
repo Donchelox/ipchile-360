@@ -13,10 +13,10 @@ var startSedes = function(){
 
 //open menu and animation
 function toggleSiderbarMenu(){
-    document.getElementById("sidebar-menu").classList.toggle('close');
+    document.getElementById("sidebar-menu").classList.toggle('cerrar');
 }
 function toggleCloseSiderbar(){
-    document.getElementById("close").classList.toggle('d-none');
+    document.getElementById("cerrar").classList.toggle('d-none');
 }
 
 function closeDesc(){
@@ -29,6 +29,9 @@ var returnHome = function(){
     document.getElementById("home-recorrido").style.display = "block";
     scrollMenu.removeAttribute('class');
     aScene.style.display = "none";
+}
+var returnHomeGaleria = function(){
+    window.location.href = '../../index.html';
 }
 //Escuelas
 var sectionAdministracion = function(){
@@ -178,9 +181,13 @@ function espaciosTemuco(){
     scrollMenu.classList.toggle('sedes-espacios-temuco-active');
 } 
 
-//Administracion 360
-//TALLER DE APLICACIONES PRACTICAS DE DISEÑO 2D Y3D
+//Administracion 
+//360 TALLER DE APLICACIONES PRACTICAS DE DISEÑO 2D Y3D
 function tallerDiseno3Dy2D(){
     aScene.style.display = "block";
     aSky.setAttribute('src', 'img/escuelas/administracion/taller-aplicaciones-diseno-2dy3d/republica/360/diseno-republica01.jpg');
+}
+//Gastronomia
+function gastroRepublica(){
+    window.location.href = '../galeria/administracion/gastronomia-republica.html';
 }

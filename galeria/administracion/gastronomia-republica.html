@@ -6,65 +6,28 @@
     <meta name='viewport' 
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
      user-scalable=0' >
-    <link rel="icon" type="image/png" href="img/favicon.ico">
-    <script src="js/aframe-master.js"></script>
+    <link rel="icon" type="image/png" href="../../img/favicon.ico">
+    <script src="../../js/aframe-master.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="icon" href="img/favicon.ico">
-    <script src="js/aframe-master.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" >
+    <link rel="stylesheet" href="../../css/gallery.css" >
+    <link rel="icon" href="../..//img/favicon.ico">
     <title>Recorrido Virtual IPCHILE</title>
 
 </head>
 <body>
 
 <main>
-    <section id="home-recorrido" style="z-index: 99999999999;overflow: scroll;">
-        <div id="logo-home">
-            <img src="img/logo.svg" alt="" width="250px">
-        </div>
-        <div class="escuelas-grid">
-            <div class="item-escuela administracion" onclick="sectionAdministracion()">
-                <div class="content">
-                    Escuela de Administración y negocios
-                </div>
-            </div>
-            <div class="item-escuela humanidades" onclick="sectionHumanidades()">
-                <div class="content">
-                    Escuela de Humanidades
-                </div>
-            </div>
-            <div class="item-escuela procesos" onclick="sectionProcesos()">
-                <div class="content">
-                    Escuela de Procesos industriales y recursos naturales
-                </div>
-            </div>
-            <div class="item-escuela ingenieria" onclick="sectionIngenieria()">
-                <div class="content">
-                    Escuela de Ingeniería
-                </div>
-            </div>
-            <div class="item-escuela salud" onclick="sectionSalud()">
-                <div class="content">
-                    Escuela de Salud
-                </div>
-            </div>
-            <div class="item-escuela espacios" onclick="sectionEspacios()">
-                <div class="content">
-                    Espacios Comunes y biblioteca
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Menu-->
-    <nav id="sidebar-menu" style="display: none;">
+    <nav id="sidebar-menu" class="cerrar">
         <sidebar>
             <div id="content-sidebar">
-                <div onclick="returnHome()" id="logo">
+                <div onclick="returnHomeGaleria()" id="logo">
                 </div>
                 <!--Menú-->
                 <div id="menu">
-                    <div id="scroll-menu">
+                    <div id="scroll-menu" class="sedes-gastronomia-active">
                         <!--Menu Escuelas-->
                         <div class="menu-lateral escuelas" id="level-1">
 
@@ -557,15 +520,107 @@
     </nav>
     <!-- Fin Menu-->
 
-    <!--Imagen 360-->
-    <section class="recorrido-360">
-        <a-scene style="display:none;">
-            <a-sky src="" rotation="0 -160 0"></a-sky>
-        </a-scene>
-    </section>
-     <!--- FIN Imagen 360-->
-     
+
+    <h2 style="text-align:center">Gastronomía Sede República</h2>
+
+    <div class="row">
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep07.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep08.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep09.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep01.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep02.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep03.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep04.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep05.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep06.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep07.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">8 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep08.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">9 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep09.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">10 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep10.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">11 / 11</div>
+          <img loading="lazy" src="../../img/escuelas/administracion/gastronomia/republica/galeria/gastronomia-rep11.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </div>
+    </div>
 </main>
-    <script src="js/app.js"></script>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/gallery.js"></script>
 </body>
 </html>
