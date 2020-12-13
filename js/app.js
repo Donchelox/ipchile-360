@@ -42,14 +42,15 @@ var sectionAdministracion = function(){
     document.getElementById("home-recorrido").style.display = "none";
     scrollMenu.classList.toggle('administracion-active');
     aScene.style.display = "block";
-    document.getElementById("desc360").style.display = "block";
+    aSky.setAttribute('src', 'img/escuelas/administracion/taller-aplicaciones-diseno-2dy3d/republica/360/diseno-republica01.jpg');
+    document.getElementById("taller-prototipo").focus();
 }
 var sectionHumanidades = function(){
     document.getElementById("sidebar-menu").style.display = "block";
     document.getElementById("home-recorrido").style.display = "none";
     scrollMenu.classList.toggle('humanidades-active');
     aScene.style.display = "block";
-    aSky.setAttribute('src', 'img/360/clinica-odontologica-1.jpg');
+    aSky.setAttribute('src', '../../img/escuelas/humanidades/sala-didactica/republica/360/didactica-rep02.jpg');
 }
 var sectionProcesos = function(){
     document.getElementById("sidebar-menu").style.display = "block";
@@ -185,12 +186,15 @@ function espaciosTemuco(){
 } 
 
 //Administracion 
-//360 TALLER DE APLICACIONES PRACTICAS DE DISEÑO 2D Y3D
+//TALLER DE APLICACIONES PRACTICAS DE DISEÑO 2D Y3D
 function tallerDiseno3Dy2D(){
-    aScene.style.display = "block";
-    aSky.setAttribute('src', 'img/escuelas/administracion/taller-aplicaciones-diseno-2dy3d/republica/360/diseno-republica01.jpg');
+    window.location.href = '../360/administracion/taller-aplicaciones-practicas-2d3d.html';
 }
-//Gastronomia
+//PROTOTIPO
+function tallerPrototipo(){
+    window.location.href = '../galeria/administracion/taller-prototipo-republica.html';
+}
+//GASTRONOMIA
 function gastroRepublica(){
     window.location.href = '../galeria/administracion/gastronomia-republica.html';
 }
