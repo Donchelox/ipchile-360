@@ -192,8 +192,8 @@ function tallerDiseno3Dy2D(){
 }
 //Gastronomia
 function gastroRepublica(){
-    window.location.href = '../../galeria/administracion/gastronomia-republica.html';
+    window.location.href = '../galeria/administracion/gastronomia-republica.html';
 }
 function gastroRancagua(){
-    window.location.href = '../../galeria/administracion/gastronomia-rancagua.html';
+    window.location.href = '../galeria/administracion/gastronomia-rancagua.html';
 }
