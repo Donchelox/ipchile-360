@@ -114,3 +114,51 @@ function sedesGastronomia(){
     scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('sedes-gastronomia-active');
 } 
+function sedesProgramacionComputacional(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-programacion-computacional-active');
+} 
+function sedesAutomatizacionPLC(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-automatizacion-plc-active');
+} 
+function sedesAutomotriz(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-automotriz-active');
+} 
+function sedesMotos(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-motos-active');
+} 
+function sedesMotores(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-motores-active');
+} 
+function sedesCircuitosAutomovil(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-circuitos-automovil-active');
+} 
+function sedesMecanismos(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-mecanismos-active');
+} 
+function sedesAudiologia(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-audiologia-active');
+} 
+function sedesGimnasio(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-gimnasio-active');
+} 
+function sedesPsicomotricidad(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-psicomotricidad-active');
+} 
+function sedesMasoterapia(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-masoterapia-active');
+} 
+function sedesAnatomia(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-anatomia-active');
+} 
