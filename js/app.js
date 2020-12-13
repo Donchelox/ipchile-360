@@ -162,3 +162,19 @@ function sedesAnatomia(){
     scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('sedes-anatomia-active');
 } 
+function espaciosLaserena(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-espacios-laserena-active');
+} 
+function espaciosRepublica(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-espacios-republica-active');
+} 
+function espaciosRancagua(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-espacios-rancagua-active');
+} 
+function espaciosTemuco(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-espacios-temuco-active');
+} 
