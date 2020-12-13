@@ -13,133 +13,7 @@
     <link rel="icon" href="img/favicon.ico">
     <script src="js/aframe-master.js"></script>
     <title>Recorrido Virtual IPCHILE</title>
-    <style>
-        .row > .column {
-  padding: 0 8px;
-}
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-    </style>
 </head>
 <body>
 
@@ -151,32 +25,32 @@ img.hover-shadow {
         <div class="escuelas-grid">
             <div class="item-escuela administracion" onclick="sectionAdministracion()">
                 <div class="content">
-                    Escuela de administración y negocios
+                    Escuela de Administración y negocios
                 </div>
             </div>
             <div class="item-escuela humanidades" onclick="sectionHumanidades()">
                 <div class="content">
-                    Escuela de humanidades
+                    Escuela de Humanidades
                 </div>
             </div>
             <div class="item-escuela procesos" onclick="sectionProcesos()">
                 <div class="content">
-                    Escuela de procesos industriales y recursos naturales
+                    Escuela de Procesos industriales y recursos naturales
                 </div>
             </div>
             <div class="item-escuela ingenieria" onclick="sectionIngenieria()">
                 <div class="content">
-                    Escuela de ingeniería
+                    Escuela de Ingeniería
                 </div>
             </div>
             <div class="item-escuela salud" onclick="sectionSalud()">
                 <div class="content">
-                    Escuela de salud
+                    Escuela de Salud
                 </div>
             </div>
             <div class="item-escuela espacios" onclick="sectionEspacios()">
                 <div class="content">
-                    Espacios comunes
+                    Espacios Comunes y biblioteca
                 </div>
             </div>
         </div>
@@ -195,13 +69,13 @@ img.hover-shadow {
                         <div class="menu-lateral escuelas" id="level-1">
 
                             <div onclick="escuelaAdministracion()" class="menu-item e-administracion">
-                                <h3>Escuela de administración y negocios</h3><i class="fa fa-angle-right"></i>
+                                <h3>Escuela de Administración y negocios</h3><i class="fa fa-angle-right"></i>
                             </div>
                             <div onclick="escuelaHumanidades()" onclick="escuelaHumanidades" class="menu-item e-humanidades">
-                                <h3>Escuela de humanidades</h3><i class="fa fa-angle-right"></i>
+                                <h3>Escuela de Humanidades</h3><i class="fa fa-angle-right"></i>
                             </div>
                             <div onclick="escuelaProcesos()" onclick="escuelaProcIndustriales" class="menu-item e-procesos-industriales">
-                                <h3>Escuela de procesos industriales</h3><i class="fa fa-angle-right"></i>
+                                <h3>Escuela de Procesos industriales y recursos naturales</h3><i class="fa fa-angle-right"></i>
                             </div>
                             
                             <div onclick="escuelaIngenieria()" class="menu-item e-ingenieria">
@@ -209,22 +83,18 @@ img.hover-shadow {
                             </div>
 
                             <div onclick="escuelaSalud()" class="menu-item e-salud">
-                                <h3>Escuela de salud</h3><i class="fa fa-angle-right"></i>
+                                <h3>Escuela de Salud</h3><i class="fa fa-angle-right"></i>
                             </div>
 
                             <div onclick="escuelaEspacios()" class="menu-item e-espacios-comunes">
-                                <h3>Espacios comunes</h3><i class="fa fa-angle-right"></i>
+                                <h3>Espacios comunes y biblioteca</h3><i class="fa fa-angle-right"></i>
                             </div>
-
-                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
-                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
-                            </a>
                         </div>
                         <!--FIN Menu Escuelas-->
                         <!--Menu Carreras administracion-->
                         <div class="menu-lateral" id="carreras-adminitracion">
-                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaAdministracion()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
-                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="sedesGastronomia()" class="menu-item carreras-link">
                                 <h3>Gastronomía</h3><i class="fa fa-angle-right"></i>
                             </div>
                             <div onclick="escuelaHumanidades()" class="menu-item carreras-link">
@@ -233,34 +103,53 @@ img.hover-shadow {
                             <div onclick="escuelaProcIndustriales()" class="menu-item carreras-link">
                                 <h3>Taller de prototipo</h3><i class="fa fa-angle-right"></i>
                             </div>
-
-                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
-                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
-                            </a>
                         </div>
                         <!--FIN Carreras Administracion-->
+                        <!--Menu Sedes Administración Gastronomía-->
+                        <div class="menu-lateral" id="sedes-gastronomia">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaAdministracion()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div class="menu-item carreras-link">
+                              <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="menu-item carreras-link">
+                                <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                      <!--FIN Sedes Humanidades-->
                         <!--Menu Carreras Humanidades-->
                         <div class="menu-lateral" id="carreras-humanidades">
-                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaHumanidades()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="sedesHumanidades()" class="menu-item carreras-link ">
+                                <h3>Sala didáctica</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <!--FIN Carreras Humanidades-->
+
+                        <!--Menu Sedes Humanidades-->
+                        <div class="menu-lateral" id="sedes-humanidades">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaHumanidades()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
                             <div class="menu-item carreras-link dropdown">
-                                <h3>Sala didáctica</h3><i class="fa fa-angle-down"></i>
+                                <h3>Sede La serena</h3><i class="fa fa-angle-down"></i>
                                 <div class="dropdown-content">
                                     <div class="sub-a icon-gallery">Galería</div>
                                     <div class="sub-a icon-360">Recorrido 360º</div>
                                 </div>
                             </div>
-                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
-                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
-                            </a>
+                            <div class="menu-item carreras-link">
+                              <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="menu-item carreras-link">
+                              <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                            </div>
                         </div>
-                        <!--FIN Carreras Humanidades-->
+                      <!--FIN Sedes Humanidades-->
                         <!--Menu Carreras Procesos-->
                         <div class="menu-lateral" id="carreras-procesos">
-                            <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaProcesos()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
-                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                            <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link d-none">
                                 <h3>Laboratorio de higiene</h3><i class="fa fa-angle-right"></i>
                             </div>
-                            <div onclick="escuelaHumanidades()" class="menu-item carreras-link dropdown">
+                            <div class="menu-item carreras-link dropdown">
                                 <h3>Laboratorio de química</h3><i class="fa fa-angle-down"></i>
                                 <div class="dropdown-content">
                                     <div class="sub-a icon-gallery">Galería</div>
@@ -270,34 +159,81 @@ img.hover-shadow {
                             <div onclick="escuelaProcIndustriales()" class="menu-item carreras-link">
                                 <h3>Taller de instalaciones y terminaciones</h3><i class="fa fa-angle-right"></i>
                             </div>
-                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link dropdown">
+                            <div class="menu-item carreras-link dropdown">
                                 <h3>Taller de obra gruesa</h3><i class="fa fa-angle-down"></i>
                                 <div class="dropdown-content">
                                     <div class="sub-a icon-gallery">Galería</div>
                                     <div class="sub-a icon-360">Recorrido 360º</div>
                                 </div>
                             </div>
-                            <div onclick="escuelaHumanidades()" class="menu-item carreras-link">
-                                <h3>Taller de metalurgia</h3><i class="fa fa-angle-right"></i>
+                            <div class="menu-item carreras-link dropdown">
+                                <h3>Taller de metalurgia</h3><i class="fa fa-angle-down"></i>
+                                <div class="dropdown-content">
+                                  <div class="sub-a">Sede La serena</div>
+                                  <div class="sub-a">Sede República</div>
+                                  <div class="sub-a">Sede Rancagua</div>
+                              </div>
                             </div>
-                            <div onclick="escuelaProcIndustriales()" class="menu-item carreras-link dropdown">
-                                <h3>Taller de minería</h3><i class="fa fa-angle-right"></i>
+                            <div class="menu-item carreras-link dropdown">
+                                <h3>Taller de minería</h3><i class="fa fa-angle-down"></i>
+                                <div class="dropdown-content">
+                                  <div class="sub-a">Sede La serena</div>
+                                  <div class="sub-a">Sede República</div>
+                                  <div class="sub-a">Sede Rancagua</div>
+                              </div>
                             </div>
-
-                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
-                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
-                            </a>
                         </div>
                         <!--FIN Carreras Procesos-->
                         <!--Menu Carreras ingenieria-->
                         <div class="menu-lateral" id="carreras-ingenieria">
                             <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
-                            <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
-                                <h3>Ingenieria</h3><i class="fa fa-angle-right"></i>
+                            <div class="carreras-menu">
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                  <h3>Laboratorio de Programación Computacional</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio Hardware y Cableado Estructurado</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Redes Computacionales</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de máquinas y comando eléctrico</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de automatización control y PLC</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de neumática, hidráulica y PLC</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio Multipropósito Automotriz</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Motos</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Motores</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Electricidad y Circuitos del Automóvil</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Hidroneumática e Inyección</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Hidroneumática e Inyección</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Mecanismos y Transmisiones</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Post Producción Audiovisual</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                              <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Refuerzo Sonoro</h3><i class="fa fa-angle-right"></i>
+                              </div>
                             </div>
-                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
-                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
-                            </a>
                         </div>
                         <!--FIN Carreras ingenieria-->
                         <!--Menu Carreras salud-->
@@ -306,9 +242,6 @@ img.hover-shadow {
                             <div onclick="escuelaAdministracion()" class="menu-item carreras-link">
                                 <h3>Salud</h3><i class="fa fa-angle-right"></i>
                             </div>
-                            <a href="https://www.ipchile.cl" target="_blank" style="text-align: center;">
-                                <div class="link-ipchile"><p>IPCHILE.cl</p></div>
-                            </a>
                         </div>
                         <!--FIN Carreras salud-->
                         <!--Menu Carreras espacios-->

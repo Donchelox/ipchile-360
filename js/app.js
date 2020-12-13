@@ -74,22 +74,43 @@ var sectionEspacios = function(){
     aScene.style.display = "block";
     aSky.setAttribute('src', 'img/360/clinica-odontologica-1.jpg');
 }
+
+//volver
+function volverMenu(){
+    scrollMenu.removeAttribute('class');
+}
 //Menu level 1
 function escuelaAdministracion(){
+    scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('administracion-active');
 }
 function escuelaHumanidades(){
+    scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('humanidades-active');
 }
 function escuelaProcesos(){
+    scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('procesos-active');
 }
 function escuelaIngenieria(){
+    scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('ingenieria-active');
 }
 function escuelaSalud(){
+    scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('salud-active');
 }
 function escuelaEspacios(){
+    scrollMenu.removeAttribute('class');    
     scrollMenu.classList.toggle('espacios-comunes-active');
 }
+
+//Level 2
+function sedesHumanidades(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-humanidades-active');
+} 
+function sedesGastronomia(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-gastronomia-active');
+} 

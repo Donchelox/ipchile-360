@@ -14,6 +14,12 @@
     /*user-select: none;*/
     background-color: @color-ipchile;
 }
+.d-none{
+    display: none !important;
+}
+h1,h2,h3,h4,p,.sub-a{
+    user-select: none;
+}
 //Main
 main{
     width: 100%;
@@ -48,9 +54,12 @@ main{
     text-align: left;
     color: black;
 }
-.sub-a:first-child{
+.sub-a{
     border-bottom: solid 1px rgb(172, 172, 172);
-    }
+}
+.sub-a:last-of-type{
+    border-bottom: none;
+}
 .sub-a:hover{
     background-color: #0079bf;
     color: white;
@@ -63,6 +72,8 @@ main{
     margin: 0px;
     padding: 15px 5px 15px 10px;
     background-color: @color-ipchile;
+    position: sticky;
+    top: 0;
 }
 sidebar{
     position: absolute;
@@ -77,14 +88,16 @@ sidebar{
     transition-duration: 0.5s;
     transition-timing-function: ease;
     position: relative;
-    z-index: 99998;
-    /*display: none;*/}
+    z-index: 99998;}
     .close{
     position: relative;
     transform: translateX(-251px);
     transition-duration: 0.5s;
     transition-timing-function: ease;
     z-index: 99999;
+}
+.carreras-menu{
+    margin-bottom: 50px;
 }
 a{
     color: @wh;
@@ -228,6 +241,14 @@ p.title{
     transform: translate(-1500px, 0px);
     .time-menu();
 }
+#scroll-menu.sedes-humanidades-active{
+    transform: translate(-1750px, 0px);
+    .time-menu();
+}
+#scroll-menu.sedes-gastronomia-active{
+    transform: translate(-2000px, 0px);
+    .time-menu();
+}
 #level-1{
     position: absolute;
     width: 250px;
@@ -277,6 +298,20 @@ p.title{
     transform: translateX(1500px);
     height: 80vh;
 }
+#sedes-humanidades{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(1750px);
+    height: 80vh;
+}
+#sedes-gastronomia{
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    transform: translateX(2000px);
+    height: 80vh;
+}
 .link-ipchile{
     position: fixed;
     left: 0;
@@ -287,6 +322,9 @@ p.title{
 .link-ipchile:hover {
     background: @color-ipchile;
     margin: 0 auto;
+}
+.link-top{
+    height: 40px !important;
 }
 .menu(){
     position: absolute;
@@ -307,6 +345,9 @@ p.title{
 #menu-temuco{
     .menu();
     transform: translateX(1250px);
+}
+.menu-lateral{
+    overflow-y: scroll;
 }
 .menu-item{
     font-size:14px;
@@ -365,7 +406,7 @@ i.fa.fa-angle-right, .i.fa.fa-angle-left {
     transition-duration: 0.2s;
     transition-timing-function: ease;
 }
-i.fa.fa-angle-down, {
+i.fa.fa-angle-down {
     font-size: 18px;
     margin-right: 5px;
 }
