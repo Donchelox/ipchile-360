@@ -36,7 +36,6 @@ var sectionAdministracion = function(){
     document.getElementById("home-recorrido").style.display = "none";
     scrollMenu.classList.toggle('administracion-active');
     aScene.style.display = "block";
-    aSky.setAttribute('src', 'img/360/clinica-odontologica-1.jpg');
     document.getElementById("desc360").style.display = "block";
 }
 var sectionHumanidades = function(){
@@ -178,3 +177,10 @@ function espaciosTemuco(){
     scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('sedes-espacios-temuco-active');
 } 
+
+//Administracion 360
+//TALLER DE APLICACIONES PRACTICAS DE DISEÑO 2D Y3D
+function tallerDiseno3Dy2D(){
+    aScene.style.display = "block";
+    aSky.setAttribute('src', 'img/escuelas/administracion/taller-aplicaciones-diseno-2dy3d/republica/360/diseno-republica01.jpg');
+}
