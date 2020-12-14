@@ -184,6 +184,22 @@ function espaciosTemuco(){
     scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('sedes-espacios-temuco-active');
 } 
+function sedesQuimica(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-quimica-active');
+} 
+function sedesObraGruesa(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-obra-gruesa-active');
+} 
+function sedesMetalurgia(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-metalurgia-active');
+} 
+function sedesMineria(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-mineria-active');
+} 
 
 //Administracion 
 //TALLER DE APLICACIONES PRACTICAS DE DISEÑO 2D Y3D
