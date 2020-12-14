@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >
+    <link rel="icon" type="image/png" href="../../img/favicon.ico">
+    <script src="../../js/aframe-master.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css" >
+    <link rel="stylesheet" href="../../css/gallery.css" >
+    <link rel="icon" href="../..//img/favicon.ico">
+    <title>Recorrido Virtual IPCHILE</title>
+
+</head>
+<body>
+
+<main>
+
+    <!-- Menu-->
+    <nav id="sidebar-menu" class="cerrar">
+      <sidebar>
+          <div id="content-sidebar">
+              <div onclick="returnHomeGaleria()" id="logo">
+              </div>
+              <!--Menú-->
+              <div id="menu">
+                  <div id="scroll-menu" class="ingenieria-active">
+                      <!--Menu Escuelas-->
+                      <div class="menu-lateral escuelas" id="level-1">
+
+                          <div onclick="escuelaAdministracion()" class="menu-item e-administracion">
+                              <h3>Escuela de Administración y negocios</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div onclick="escuelaHumanidades()" onclick="escuelaHumanidades" class="menu-item e-humanidades">
+                              <h3>Escuela de Humanidades</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div onclick="escuelaProcesos()" onclick="escuelaProcIndustriales" class="menu-item e-procesos-industriales">
+                              <h3>Escuela de Procesos industriales y recursos naturales</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          
+                          <div onclick="escuelaIngenieria()" class="menu-item e-ingenieria">
+                              <h3>Escuela de Ingeniería</h3><i class="fa fa-angle-right"></i>
+                          </div>
+
+                          <div onclick="escuelaSalud()" class="menu-item e-salud">
+                              <h3>Escuela de Salud</h3><i class="fa fa-angle-right"></i>
+                          </div>
+
+                          <div onclick="escuelaEspacios()" class="menu-item e-espacios-comunes">
+                              <h3>Espacios comunes y biblioteca</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                      </div>
+                      <!--FIN Menu Escuelas-->
+                      <!--Menu Carreras administracion-->
+                      <div class="menu-lateral" id="carreras-adminitracion">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          
+                          <div onclick="sedesGastronomia()" class="menu-item carreras-link">
+                              <h3>Gastronomía</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <a href="../../360/administracion/taller-aplicaciones-practicas-2d3d.html">
+                          <div class="menu-item carreras-link">
+                              <h3>Taller de aplicaciones prácticas 2D y 3D</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          </a>
+                          <a href="../../galeria/administracion/taller-prototipo-republica.html">
+                          <div class="menu-item carreras-link" id="taller-prototipo">
+                              <h3>Taller de prototipo</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          </a>
+                      </div>
+                      <!--FIN Carreras Administracion-->
+                      <!--Menu Sedes Administración Gastronomía-->
+                      <div class="menu-lateral" id="sedes-gastronomia">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaAdministracion()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                        <a href="../../galeria/administracion/gastronomia-republica.html">
+                          <div class="menu-item carreras-link">
+                            <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </a>
+                          <a href="../../galeria/administracion/gastronomia-rancagua.html">
+                          <div class="menu-item carreras-link">
+                              <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </a>
+                      </div>
+                    <!--FIN Sedes Humanidades-->
+                      <!--Menu Carreras Humanidades-->
+                      <div class="menu-lateral" id="carreras-humanidades">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div onclick="sedesHumanidades()" class="menu-item carreras-link ">
+                              <h3>Sala didáctica</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                      </div>
+                      <!--FIN Carreras Humanidades-->
+
+                      <!--Menu Sedes Humanidades-->
+                      <div class="menu-lateral" id="sedes-humanidades">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaHumanidades()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link dropdown">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-down"></i>
+                              <div class="dropdown-content">
+                                <a href="../../galeria/humanidades/didactica-laserena.html"><div class="sub-a icon-gallery">Galería</div></a>
+                                  <a href="../../360/humanidades/sala-didactica-laserena.html"><div class="sub-a icon-360">Recorrido 360º</div></a>
+                              </div>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                            <h3>Sede República</h3><i class="fa fa-angle-down"></i>
+                              <div class="dropdown-content">
+                                <a href="../../360/humanidades/sala-didactica-republica01.html"><div class="sub-a icon-360">Sala 1 - 360º</div></a>
+                                  <a href="../../360/humanidades/sala-didactica-republica02.html"><div class="sub-a icon-360">Sala 2 - 360º</div></a>
+                              </div>
+                          </div>
+                          <a href="../../galeria/humanidades/didactica-rancagua.html">
+                            <div class="menu-item carreras-link">
+                                <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                      </div>
+                    <!--FIN Sedes Humanidades-->
+                      <!--Menu Carreras Procesos-->
+                      <div class="menu-lateral" id="carreras-procesos">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div onclick="escuelaAdministracion()" class="menu-item carreras-link d-none">
+                              <h3>Laboratorio de higiene</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                              <h3>Laboratorio de química</h3><i class="fa fa-angle-down"></i>
+                              <div class="dropdown-content">
+                                  <div class="sub-a icon-gallery">Galería</div>
+                                  <div class="sub-a icon-360">Recorrido 360º</div>
+                              </div>
+                          </div>
+                          <div onclick="escuelaProcIndustriales()" class="menu-item carreras-link">
+                              <h3>Taller de instalaciones y terminaciones</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                              <h3>Taller de obra gruesa</h3><i class="fa fa-angle-down"></i>
+                              <div class="dropdown-content">
+                                  <div class="sub-a icon-gallery">Galería</div>
+                                  <div class="sub-a icon-360">Recorrido 360º</div>
+                              </div>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                              <h3>Taller de metalurgia</h3><i class="fa fa-angle-down"></i>
+                              <div class="dropdown-content">
+                                <div class="sub-a">Sede La serena</div>
+                                <div class="sub-a">Sede República</div>
+                                <div class="sub-a">Sede Rancagua</div>
+                            </div>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                              <h3>Taller de minería</h3><i class="fa fa-angle-down"></i>
+                              <div class="dropdown-content">
+                                <div class="sub-a">Sede La serena</div>
+                                <div class="sub-a">Sede República</div>
+                                <div class="sub-a">Sede Rancagua</div>
+                            </div>
+                          </div>
+                      </div>
+                      <!--FIN Carreras Procesos-->
+                      <!--Menu Carreras ingenieria-->
+                      <div class="menu-lateral" id="carreras-ingenieria">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="carreras-menu">
+                            <div onclick="sedesProgramacionComputacional()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Programación Computacional</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <a href="../../galeria/ingenieria/lab-hardware-laserena.html">
+                              <div class="menu-item carreras-link">
+                                <h3>Laboratorio Hardware y Cableado Estructurado</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                            </a>
+                            <div class="menu-item carreras-link d-none">
+                              <h3>Laboratorio de Redes Computacionales</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <a href="../../galeria/ingenieria/lab-mediciones-electricas-laserena.html">
+                              <div class="menu-item carreras-link">
+                                <h3>Laboratorio de Mediciones eléctricas</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                            </a>
+                            <a href="../../galeria/ingenieria/lab-maquinasycomandos-rancagua.html">
+                            <div class="menu-item carreras-link">
+                              <h3>Laboratorio de máquinas y comando eléctrico</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            </a>
+                            <div onclick="sedesAutomatizacionPLC()" class="menu-item carreras-link">
+                              <h3>Laboratorio de automatización control y PLC</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="menu-item carreras-link d-none">
+                              <h3>Laboratorio de neumática, hidráulica y PLC</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="sedesAutomotriz()" class="menu-item carreras-link">
+                              <h3>Laboratorio Multipropósito Automotriz</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="sedesMotos()" class="menu-item carreras-link dropdown">
+                              <h3>Laboratorio de Motos</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="sedesMotores()" class="menu-item carreras-link">
+                              <h3>Laboratorio de Motores</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="sedesCircuitosAutomovil()" class="menu-item carreras-link">
+                              <h3>Laboratorio de Electricidad y Circuitos del Automóvil</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <a href="../../galeria/ingenieria/lab-hidroneumatica-laserena.html">
+                              <div class="menu-item carreras-link">
+                                <h3>Laboratorio de Hidroneumática e Inyección</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                            </a>
+                            <div onclick="sedesMecanismos()" class="menu-item carreras-link">
+                              <h3>Laboratorio de Mecanismos y Transmisiones</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="menu-item carreras-link dropdown">
+                              <h3>Laboratorio de Post Producción Audiovisual</h3><i class="fa fa-angle-right"></i>
+                              <div class="dropdown-content">
+                                <a href="../../360/ingenieria/lab-postproduccion-republica.html">
+                                <div class="sub-a icon-360">Recorrido 360º</div></a>
+                                <a href="../../galeria/ingenieria/lab-postproduccion-republica.html">
+                                <div class="sub-a icon-gallery">Galería</div></a>
+                            </div>
+                            </div>
+                            <a href="../../galeria/ingenieria/lab-refuerzo-sonoro-republica.html">
+                              <div class="menu-item carreras-link">
+                                <h3>Laboratorio de Refuerzo Sonoro</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                            </a>
+                            <a href="../../galeria/ingenieria/estudio-grabacion-republica.html">
+                              <div class="menu-item carreras-link">
+                                <h3>Estudio de grabación</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                            </a>
+                            <a href="../../galeria/ingenieria/taller-postproduccion-sonido-republica.html">
+                              <div class="menu-item carreras-link">
+                                <h3>Taller Postproducción de sonido</h3><i class="fa fa-angle-right"></i>
+                              </div>
+                            </a>
+                          </div>
+                      </div>
+                      <!--FIN Carreras ingenieria-->
+                      <!--Menu Sedes Programacion Computacional-->
+                      <div class="menu-lateral" id="sedes-programacion-computacional">
+                        
+                          <div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <a href="../../galeria/ingenieria/lab-programacion-computacional-laserena.html">
+                            <div class="menu-item carreras-link">
+                                <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                          <a href="../../galeria/ingenieria/lab-programacion-computacional-republica.html">
+                          <div class="menu-item carreras-link dropdown">
+                            <h3>Sede república</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          </a>
+                        </div>
+                      <!--FIN Sedes Programacion Computacional-->
+                      <!--Menu Sedes automatizacion PLC-->
+                      <div class="menu-lateral" id="sedes-automatizacion-plc">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <a href="../../galeria/ingenieria/lab-automatizacion-plc-republica.html">
+                          <div class="menu-item carreras-link">
+                              <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          </a>
+                          <a href="../../galeria/ingenieria/lab-automatizacion-plc-rancagua.html">
+                            <div class="menu-item carreras-link dropdown">
+                              <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                        </div>
+                      <!--FIN Sedes Automatizacion PLC-->
+                      <!--Menu Sedes Automotriz-->
+                        <div class="menu-lateral" id="sedes-automotriz">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <a href="../../galeria/ingenieria/lab-automotriz-laserena.html">
+                            <div class="menu-item carreras-link">
+                                <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                            <a href="../../galeria/ingenieria/lab-automotriz-republica.html">
+                              <div class="menu-item carreras-link">
+                                <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                          <a href="../../galeria/ingenieria/lab-automotriz-rancagua.html">
+                            <div class="menu-item carreras-link dropdown">
+                              <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                          <a href="../../galeria/ingenieria/lab-automotriz-temuco.html">
+                            <div class="menu-item carreras-link dropdown">
+                              <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                          </div>
+                      <!--FIN Sedes Automotriz-->
+                      <!--Menu Sedes Motos-->
+                      <div class="menu-lateral" id="sedes-motos">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link d-none">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <a href="../../galeria/ingenieria/lab-motos-rancagua.html">
+                            <div class="menu-item carreras-link">
+                              <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                          <a href="../../galeria/ingenieria/lab-motos-temuco.html">
+                            <div class="menu-item carreras-link">
+                              <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                        </div>
+                      <!--FIN Sedes Motos-->
+                      <!--Menu Sedes Motores-->
+                      <div class="menu-lateral" id="sedes-motores">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link dropdown">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-down"></i>
+                              <div class="dropdown-content">
+                                <a href="../../galeria/ingenieria/lab-motores-laserena.html">
+                                  <div class="sub-a icon-gallery">Galería</div>
+                                </a>
+                                <a href="../../360/ingenieria/lab-motores-laserena.html">
+                                  <div class="sub-a icon-360">Recorrido 360º</div>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="menu-item carreras-link d-none">
+                            <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <a href="../../galeria/ingenieria/lab-motores-temuco.html">
+                            <div class="menu-item carreras-link">
+                              <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </a>
+                        </div>
+                      <!--FIN Sedes Motores-->
+                      <!--Menu Sedes Circuitos automovil-->
+                      <div class="menu-lateral" id="sedes-circuitos-automovil">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                        <a href="../../galeria/ingenieria/lab-electricidad-circuitos-laserena.html">
+                          <div class="menu-item carreras-link ">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </a>
+                        <a href="../../galeria/ingenieria/lab-electricidad-circuitos-rancagua.html">
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </a>
+                        <a href="../../galeria/ingenieria/lab-electricidad-circuitos-temuco.html">
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </a>
+                        </div>
+                      <!--FIN Sedes circuitos automovil-->
+                      <!--Menu Sedes mecanismos-->
+                      <div class="menu-lateral" id="sedes-mecanismos">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaIngenieria()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                        <a href="../../galeria/ingenieria/lab-mecanismos-transmisiones-laserena.html">
+                          <div class="menu-item carreras-link ">
+                              <h3>Sede La serena </h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </a>
+                        <a href="../../galeria/ingenieria/lab-mecanismos-transmisiones-rancagua.html">
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </a>
+                        <a href="../../galeria/ingenieria/lab-mecanismos-transmisiones-temuco.html">
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </a>
+                        </div>
+                      <!--FIN Sedes circuitos automovil-->
+                      <!--Menu Carreras salud-->
+                      <div class="menu-lateral" id="carreras-salud">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="carreras-menu">
+                            <div onclick="sedesAudiologia()" class="menu-item carreras-link">
+                                <h3>Laboratorio de Audiología</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="sedesGimnasio()" class="menu-item carreras-link">
+                              <h3>Gimnasio terapéutico</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="sedesPsicomotricidad()" class="menu-item carreras-link">
+                              <h3>Laboratorio de Psicomotricidad</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="sedesMasoterapia()" class="menu-item carreras-link">
+                              <h3>Masoterapia</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div onclick="sedesAnatomia()" class="menu-item carreras-link">
+                              <h3>Laboratorio de Anatomía</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="menu-item carreras-link">
+                              <h3>Laboratorio de órtesis y AVD</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="menu-item carreras-link">
+                              <h3>Laboratorio clínica odontólogica</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="menu-item carreras-link">
+                              <h3>Laboratorio pabellón odontológico</h3><i class="fa fa-angle-right"></i>
+                            </div>
+                          </div>
+                      </div>
+                      <!--FIN Carreras salud-->
+                      <!--Menu Sedes audiologia-->
+                      <div class="menu-lateral" id="sedes-audiologia">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaSalud()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link dropdown">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                              <div class="dropdown-content">
+                                <div class="sub-a icon-gallery">Galería</div>
+                                <div class="sub-a icon-360">Recorrido 360º</div>
+                              </div>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                            <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                            <div class="dropdown-content">
+                              <div class="sub-a icon-gallery">Galería</div>
+                              <div class="sub-a icon-360">Recorrido 360º</div>
+                            </div>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </div>
+                      <!--FIN Sedes audiologia-->
+                      <!--Menu Sedes gimnasio terapeutico-->
+                      <div class="menu-lateral" id="sedes-gimnasio">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaSalud()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link dropdown">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                              <div class="dropdown-content">
+                                <div class="sub-a icon-gallery">Galería</div>
+                                <div class="sub-a icon-360">Recorrido 360º</div>
+                              </div>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                            <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                            <div class="dropdown-content">
+                              <div class="sub-a icon-gallery">Galería</div>
+                              <div class="sub-a icon-360">Recorrido 360º</div>
+                            </div>
+                          </div>
+                        </div>
+                      <!--FIN Sedes gimnasio terapeutico-->
+                      <!--Menu Sedes psicomotricidad-->
+                      <div class="menu-lateral" id="sedes-psicomotricidad">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaSalud()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </div>
+                      <!--FIN Sedes psicomotricidad-->
+                      <!--Menu Sedes masoterapia-->
+                      <div class="menu-lateral" id="sedes-masoterapia">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaSalud()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Rancagua</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </div>
+                      <!--FIN Sedes masoterapia-->
+                      <!--Menu Sedes anatomia-->
+                      <div class="menu-lateral" id="sedes-anatomia">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaSalud()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link">
+                              <h3>Sede La serena</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Sede República</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Sede Temuco</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </div>
+                      <!--FIN Sedes anatomia-->
+                      <!--Menu espacios y biblioteca-->
+                      <div class="menu-lateral" id="carreras-espacios">
+                          <a href="#" class="link-top"><div class="menu-item return" onclick="volverMenu()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div onclick="espaciosLaserena()" class="menu-item carreras-link">
+                              <h3>Espacios La serena</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div onclick="espaciosRepublica()" class="menu-item carreras-link">
+                            <h3>Espacios República</h3><i class="fa fa-angle-right"></i>
+                        </div>
+                        <div onclick="espaciosRancagua()" class="menu-item carreras-link">
+                          <h3>Espacios Rancagua</h3><i class="fa fa-angle-right"></i>
+                        </div>
+                        <div onclick="espaciosTemuco()" class="menu-item carreras-link">
+                          <h3>Espacios Temuco</h3><i class="fa fa-angle-right"></i>
+                        </div>
+                      </div>
+                      <!--FIN espacios y biblioteca-->
+                      <!--Menu espacios la serena-->
+                      <div class="menu-lateral" id="espacios-laserena">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaEspacios()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link">
+                              <h3>Espacios comunes</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                            <h3>Biblioteca</h3><i class="fa fa-angle-down"></i>
+                            <div class="dropdown-content">
+                              <div class="sub-a icon-gallery">Galería</div>
+                              <div class="sub-a icon-360">Recorrido 360º</div>
+                            </div>
+                          </div>
+                        </div>
+                      <!--FIN espacios la serena-->
+                      <!--Menu espacios la serena-->
+                      <div class="menu-lateral" id="espacios-republica">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaEspacios()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link ">
+                            <h3>Biblioteca</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                              <h3>Espacios común - 4º piso - edificio I</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                              <h3>Patio casona</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link">
+                              <h3>Patio edificio E</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                        </div>
+                      <!--FIN espacios la serena-->
+                      <!--Menu espacios Rancagua-->
+                      <div class="menu-lateral" id="espacios-rancagua">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaEspacios()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link">
+                              <h3>Biblioteca</h3><i class="fa fa-angle-right"></i>
+                          </div>
+                          <div class="menu-item carreras-link dropdown">
+                            <h3>Espacios comunes</h3><i class="fa fa-angle-down"></i>
+                            <div class="dropdown-content">
+                              <div class="sub-a icon-gallery">Galería</div>
+                              <div class="sub-a icon-360">Recorrido 360º</div>
+                            </div>
+                          </div>
+                        </div>
+                      <!--FIN espacios rancagua-->
+                      <!--Menu espacios temuco-->
+                      <div class="menu-lateral" id="espacios-temuco">
+                        <a href="#" class="link-top"><div class="menu-item return" onclick="escuelaEspacios()">Volver<span class="return-arrow"><i class="fa fa-angle-left"></i></span></div></a>
+                          <div class="menu-item carreras-link dropdown">
+                            <h3>Biblioteca</h3><i class="fa fa-angle-down"></i>
+                            <div class="dropdown-content">
+                              <div class="sub-a icon-gallery">Galería</div>
+                              <div class="sub-a icon-360">Recorrido 360º</div>
+                            </div>
+                          </div>
+                          <div class="menu-item carreras-link">
+                            <h3>Espacios comunes</h3><i class="fa fa-angle-right"></i>
+                        </div>
+                        </div>
+                      <!--FIN espacios temuco-->
+                      <!--FIN Menu Escuelas-->
+                    
+                      
+
+                  </div>
+              </div>
+              <!--Termina Menú-->
+          </div>
+      </sidebar>
+      <!--Menu Boton abri y cerrar menu-->
+      <div class="toggle-menu">
+          <i id="open" onclick="toggleSiderbarMenu()" class="fa fa-bars"></i>
+        
+      </div>
+      <!--FIN Menu Boton abri y cerrar menu-->
+  </nav>
+  <!-- Fin Menu-->
+
+    <div id="gallery">
+    <h2 style="text-align:center">Estudio de grabación - Sede República</h2>
+
+    <div class="row">
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica05.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica06.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+    </div>
+  </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica01.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica02.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica03.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica04.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica05.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img loading="lazy" src="../../img/escuelas/ingenieria/15-taller-postproduccion-sonido/republica/galeria/tallerpostsonido_republica06.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </div>
+    </div>
+
+</main>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/gallery.js"></script>
+</body>
+</html>
