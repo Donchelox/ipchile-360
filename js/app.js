@@ -34,7 +34,7 @@ var returnHome = function(){
     aScene.style.display = "none";
 }
 var returnHomeGaleria = function(){
-    window.location.href = '../../index.html';
+    window.location.href = 'https://donchelox.github.io/ipchile-360/index.html';
 }
 //Escuelas
 var sectionAdministracion = function(){
