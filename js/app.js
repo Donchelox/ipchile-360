@@ -200,6 +200,10 @@ function sedesMineria(){
     scrollMenu.removeAttribute('class');
     scrollMenu.classList.toggle('sedes-mineria-active');
 } 
+function sedesOrtesis(){
+    scrollMenu.removeAttribute('class');
+    scrollMenu.classList.toggle('sedes-ortesis-active');
+} 
 
 //Administracion 
 //TALLER DE APLICACIONES PRACTICAS DE DISEÑO 2D Y3D
