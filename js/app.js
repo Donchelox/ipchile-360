@@ -40,10 +40,11 @@ var returnHomeGaleria = function(){
 var sectionAdministracion = function(){
     document.getElementById("sidebar-menu").style.display = "block";
     document.getElementById("home-recorrido").style.display = "none";
-    scrollMenu.classList.toggle('administracion-active');
     aScene.style.display = "block";
     aSky.setAttribute('src', 'img/escuelas/administracion/taller-aplicaciones-diseno-2dy3d/republica/360/diseno-republica01.jpg');
-    document.getElementById("taller-prototipo").focus();
+    document.getElementById("sidebar-menu").classList.toggle('cerrar');
+    scrollMenu.classList.toggle('administracion-active');
+    
 }
 var sectionHumanidades = function(){
     document.getElementById("sidebar-menu").style.display = "block";
@@ -51,34 +52,44 @@ var sectionHumanidades = function(){
     scrollMenu.classList.toggle('humanidades-active');
     aScene.style.display = "block";
     aSky.setAttribute('src', '../../img/escuelas/humanidades/sala-didactica/republica/360/didactica-rep02.jpg');
+    document.getElementById("sidebar-menu").classList.toggle('cerrar');
+    scrollMenu.classList.toggle('administracion-active');
 }
 var sectionProcesos = function(){
     document.getElementById("sidebar-menu").style.display = "block";
     document.getElementById("home-recorrido").style.display = "none";
     scrollMenu.classList.toggle('procesos-active');
     aScene.style.display = "block";
-    aSky.setAttribute('src', 'img/360/clinica-odontologica-1.jpg');
+    aSky.setAttribute('src', '../../img/escuelas/procesos/03-laboratorio-quimica/republica/360/labquimica_republica01.jpg');
+    document.getElementById("sidebar-menu").classList.toggle('cerrar');
+    scrollMenu.classList.toggle('administracion-active');
 }
 var sectionIngenieria = function(){
     document.getElementById("sidebar-menu").style.display = "block";
     document.getElementById("home-recorrido").style.display = "none";
     scrollMenu.classList.toggle('ingenieria-active');
     aScene.style.display = "block";
-    aSky.setAttribute('src', 'img/360/clinica-odontologica-1.jpg');
+    aSky.setAttribute('src', '../../img/escuelas/ingenieria/08-labs-motores/laserena/360/labmotores_serena1.jpg');
+    document.getElementById("sidebar-menu").classList.toggle('cerrar');
+    scrollMenu.classList.toggle('administracion-active');
 }
 var sectionSalud = function(){
     document.getElementById("sidebar-menu").style.display = "block";
     document.getElementById("home-recorrido").style.display = "none";
     scrollMenu.classList.toggle('salud-active');
     aScene.style.display = "block";
-    aSky.setAttribute('src', 'img/360/clinica-odontologica-1.jpg');
+    aSky.setAttribute('src', '../../img/escuelas/salud/01-LABORATORIOAUDIOLOGIA/republica/360/LABAUDIOLOGIA_REPUBLICA01.jpg');
+    document.getElementById("sidebar-menu").classList.toggle('cerrar');
+    scrollMenu.classList.toggle('administracion-active');
 }
 var sectionEspacios = function(){
     document.getElementById("sidebar-menu").style.display = "block";
     document.getElementById("home-recorrido").style.display = "none";
     scrollMenu.classList.toggle('espacios-comunes-active');
     aScene.style.display = "block";
-    aSky.setAttribute('src', 'img/360/clinica-odontologica-1.jpg');
+    aSky.setAttribute('src', '../../img/espacios-y-biblioteca/rancagua/ESPACIOS_COMUNES/360/ESPACIOCOMUN_RANCAGUA01.jpg');
+    document.getElementById("sidebar-menu").classList.toggle('cerrar');
+    scrollMenu.classList.toggle('administracion-active');
 }
 
 //volver
